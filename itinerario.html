@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+	<!-- charset (visualizzazione lettere accentate) -->
+	<meta charset="UTF-8">
+	<!-- viewport (rende responsive il sito) -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Manzoni e i luoghi manzoniani</title>
+
+	<!-- collegamento a Bottostrap CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	<!-- collegamento a file CSS personalizzato -->
+	<link rel="stylesheet" href="style.css">
+	<!-- collegamento a Bootstrap JS -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
+
+	<!-- icone Bootstrap -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+	<!-- icone Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+	<!-- Leaflet CSS per creazione mappa -->
+	<link
+ 		rel="stylesheet"
+  		href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+		integrity="sha256-sA+e2vH0Cbs1JgP6N9y+PZb2+K3dA3K8Z9rO3yKk0XU="
+  		crossorigin=""
+	/>
+
+	<!-- Leaflet JS -->
+	<script
+  		src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+  		integrity="sha256-o9N1jL5xzI/zJ4dY2SmZVYFJ8NLYjJZcVh5A6FJZ0zU="
+  		crossorigin="">
+	</script>
+
+
+</head>
+
+<body>
+
+	<!-- navbar uguale a qella della home -->
+	<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm">
+		<div class="container">
+			<a class="navbar-brand fw-bold" href="#home">Manzoni e i luoghi manzoniani</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav ms-auto">
+					<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+					<li class="nav-item"><a class="nav-link" active href="manzoni.html">Manzoni</a></li>
+					<li class="nav-item"><a class="nav-link" active href="luoghi.html">Catalogo</a></li>
+					<li class="nav-item"><a class="nav-link" href="itinerario.html">Itinerario</a></li>
+					<li class="nav-item"><a class="nav-link" href="#galleria">Galleria</a></li>
+					<li class="nav-item"><a class="nav-link" href="#fonti">Fonti</a></li>
+				</ul>
+				<!-- barra di ricerca -->
+				<form class="d-flex ms-3 align-items-center" role="search" id="searchForm">
+					<i class="bi bi-search search-icon"></i>
+					<input class="form-control search-input" type="search" placeholder="Cerca..." aria-label= "Cerca">
+				</form>
+				<!-- settore lingua -->
+				<div class="language-switcher ms-4">
+					<select class="form-select form-select-sm" id="languageSelect">
+						<option value="it" selected>IT</option>
+						<option value="en">ENG</option>
+					</select>
+				</div>
+			</div>
+		</div>
+	</nav>
+
+	<!-- itinerario dei luoghi -->
+	<section id="itinerario" class="py-5">
+  		<div class="container">
+  			<h2 class="text-center mb-4 page-title">Itinerario Manzoniano</h2>
+  			<!--a destra pulsanti di controllo: ordine alfabetico e mostra tutti-->
+  			<div class="d-flex justify-content-end align-items-center btn-group-ordina mb-2">
+      			<button id="sortBtn" class="btn btn-outline-success btn-sm me-2">Ordina A–Z</button>
+    			<button id="sortDescBtn" class="btn btn-outline-success btn-sm me-2">Ordina Z–A</button>
+    			<button id="resetView" class="btn btn-outline-primary btn-sm">Mostra tutti</button>
+    		</div>
+    		<!--a sx pulsanti per filtrare per zona-->
+    		<div class="d-flex justify-content-start align-items-center btn-group-zona mb-4">
+    			<button id="filterLecco" class="btn btn-outline-success btn-sm me-2">Lecco</button>
+    			<button id="filterMilano" class="btn btn-outline-primary btn-sm me-2">Milano</button>
+    			<button id="filterMonza" class="btn btn-outline-primary btn-sm">Monza</button>
+			</div>
+
+    		<div class="row">
+				<!-- elenco luoghi -->
+    			<div class="col-md-4 mb-3">
+        			<div id="luoghiList" class="list-group"></div>
+      			</div>
+    			<!-- mappa -->
+      			<div class="col-md-8">
+        			<div id="map" style="height: 600px; border-radius: 10px;"></div>
+  				</div>
+			</div>
+
+  		</div>
+	</section>
+
+	<!--mappa per percorso pedonale-->
+	<section id="percorso-lecco" class="py-5 bg-light">
+  		<div class="container">
+    		<h2 class="text-center mb-4">Percorso pedonale nei luoghi manzoniani di Lecco</h2>
+    		<p class="text-center text-muted mb-4">
+      			Esempio di itinerario pedonale che collega i principali luoghi descritti ne <em>I Promessi sposi</em>.
+    		</p>
+    		<div class="d-flex justify-content-center mb-3">
+      			<button id="startPercorso" class="btn btn-primary">Inizia il percorso</button>
+    		</div>
+    		<div class="row mt-3">
+    			<div class="col-md-4">
+    				<!--legenda-->
+    				<div id="legendaPercorso" class="list-group"></div>
+    			</div>
+    			<div class="col-md-8">
+    				<!--mappa percorso-->
+    				<div id="mapPercorso" style="height: 600px; border-radius: 10px;"></div>
+				</div>
+			</div>
+  		</div>
+	</section>
+
+
+	<!--footer uguale a quello della home-->
+	<footer class="text-white py-5" style="background-color: #2e5a88;">
+		<div class="container text-center">
+
+			<h5 class="fw-bold mb-3">
+				<i class="bi bi-book"></i> Manzoni e i luoghi manzoniani</h5>
+			<p class="mb-4 fst-italic">Progetto di Digital Humanities sui <em>Promessi sposi</em> e i luoghi della memoria letteraria manzoniana.</p>
+
+			<div class="row justify-content-center mb-3">
+				<div class="col-md-4">
+					<h6 class="text-uppercase fw-bold"><i class="bi bi-person-circle"></i>Crediti</h6>
+					<p class="small mb-0">Realizzato da Chiara Virciglio<br>Corso di Digital Humanities - Università di Bologna<br>Anno accademico 2024/2025</p>
+				</div>
+
+				<div class="col-md-4">
+					<h6 class="text-uppercase fw-bold"><i class="bi bi-c-circle"></i>Licenze</h6>
+				</div>
+
+				<div class="col-md-4">
+					<h6 class="text-uppercase fw-bold"><i class="bi bi-envelope"></i> Contatti</h6>
+					<p class="small mb-0">
+						Email: <a href="mailto: chiara.virciglio@unibo.it" class="text-white text-decoration-underline">chiara.virciglio@unibo.com</a>
+						<span class= "d-block mt-1">Tel: <a href="tel:+393661234567" class="text-white text-decoration-underline">+39 3661234567</a></span>
+					</p>
+				</div>
+			</div>
+
+			<!-- senzione social -->
+			<div class="mt-4">
+				<h6 class="text-uppercase fw-bold mb-3">
+					<i class="bi bi-share"></i> Seguici
+				</h6>
+				<div class="d-flex justify-content-center gap-3">
+					<a href="#" class="text-white fs-4" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+					<a href="#" class="text-white fs-4" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+					<a href="#" class="text-white fs-4" aria-label="Twitter"><i class="bi bi-twitter"></i></a>
+					<a href="#" class="text-white fs-4" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+				</div>
+			</div>
+
+			<a href="metadati.xml" target="_blank">📄 Metadati (Dublin Core XML)</a>
+			<a href="xml/tei.xml" target="_blank">📄 TEI XML</a>
+
+			<hr class="border-light">
+			<p class="mb-0">© 2025 Progetto universitario - <strong>Manzoni e i luoghi manzoniani</strong>
+			<span class= "d-block mt-1">Ultimo aggiornamento: novembre 2025</span></p>
+
+		</div>
+	</footer>
+
+	<!--bottone per tornare su-->
+	<button id="scrollTopBtn" title="Torna su">
+		<i class="fas fa-arrow-up"></i>
+	</button>
+
+	<!-- script JS -->
+	<script> // fa comparire elementi quando entrano nello schermo
+		const fadeElements = document.querySelectorAll('.fade-element');
+
+		const observer = new IntersectionObserver (entries => {
+			entries.forEach(entry => {
+				if (entry.isIntersecting) {
+					entry.target.classList.add('visible');
+				}
+			});
+		}, { threshold: 0.3 });
+
+		fadeElements.forEach(el => observer.observe(el));
+	</script>
+
+	<script>
+	window.addEventListener("scroll", function() {
+		const navbar = document.querySelector(".navbar");
+		if (window.scrollY > 50) {
+			navbar.classList.add("scrolled");
+		} else {
+			navbar.classList.remove("scrolled");
+		}
+	});
+	</script>
+
+	<!-- barra di ricerca -->
+	<script>
+	document.querySelector(".search-icon").addEventListener("click", function() {
+		const form = document.querySelector("#searchForm");
+		form.classList.toggle("active");
+	});
+	</script>
+
+	<!--bottone per tornare su-->
+	<script>
+		const scrollBtn = document.getElementById("scrollTopBtn");
+		window.onscroll = function () {
+			if (document.body.scrollTop > 300 || document.documentElement.scrollTop >300) {
+				scrollBtn.style.display = "block";
+			} else {
+				scrollBtn.style.display = "none";
+			}
+		};
+		scrollBtn.addEventListener("click", function(){
+			window.scrollTo({ top: 0, behavior: "smooth" });
+		});
+	</script>
+
+	<!-- leaflet CSS e JS -->
+	<link
+  		rel="stylesheet"
+  		href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+	/>
+	<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+	<!-- script mappa -->
+	<script>
+	document.addEventListener("DOMContentLoaded", function () {
+  		// mappa su Lecco
+  		var map = L.map('map').setView([45.85, 9.39], 11);
+
+  		// mappa base
+		L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    		attribution: '&copy; OpenStreetMap contributors'
+  		}).addTo(map);
+
+  		// icone personalizzate per i marker
+		const iconLecco = L.icon({
+  			iconUrl: 'icone/icon-lecco.png',
+  			iconSize: [32, 32],
+  			iconAnchor: [16, 32],
+  			popupAnchor: [0, -32]
+		});
+		const iconMilano = L.icon({
+  			iconUrl: 'icone/icon-milano.png',
+  			iconSize: [32, 32],
+  			iconAnchor: [16, 32],
+  			popupAnchor: [0, -32]
+		});
+		const iconMonza = L.icon({
+  			iconUrl: 'icone/icon-monza.png',
+			iconSize: [32, 32],
+  			iconAnchor: [16, 32],
+ 			popupAnchor: [0, -32]
+		});
+
+
+  		// elenco dei luoghi
+  		var luoghi = [
+    		{ nome: "Casa di Lucia", coord: [45.86118, 9.40254], desc: "Tradizionalmente identificata come la casa di Lucia Mondella.", zona: "Lecco", foto: "icone/casa_di_Lucia.jpg" },
+    		{ nome: "Palazzotto di Don Rodrigo (Olate)", coord: [45.86424, 9.40672], desc: "Dimora nobiliare ritenuta la residenza del signorotto locale.", zona: "Lecco", foto: "icone/Palazzotto-Don-Rodrigo.jpg" },
+    		{ nome: "Castello dell’Innominato (Vercurago)", coord: [45.81519, 9.42656], desc: "Fortezza medievale citata come rifugio dell’Innominato.", zona: "Lecco", foto: "icone/Castello.jpg" },
+    		{ nome: "Convento di Pescarenico", coord: [45.845636, 9.400236], desc: "L’antico convento dei cappuccini, dimora di Fra Cristoforo.", zona: "Lecco", foto: "icone/Chiesa.jpg" },
+    		{ nome: "Chiesa di Don Abbondio (Olate)", coord: [45.86169, 9.40375], desc: "Chiesa dei Santi Vitale e Valeria, associata al curato Don Abbondio.", zona: "Lecco", foto: "icone/chiesa-Olate.jpg" },
+    		{ nome: "Tabernacolo dei Bravi", coord: [45.859100, 9.409459], desc: "Luogo d'incontro tra Don Abbondio e i Bravi, dove questi ultimi gli intimano di non sposare Renzo e Lucia.", zona: "Lecco", foto: "icone/tabernacolo.jpg" },
+    		{ nome: "Villa Manzoni", coord: [45.852539, 9.399011], desc: "Residenza familiare di Alessandro Manzoni, oggi museo civico.", zona: "Lecco", foto: "icone/villamanzoni.jpg" },
+    		{ nome: "Ponte Azzone Visconti", coord: [45.847450, 9.392650], desc: "Antico ponte sul fiume Adda, simbolo di Lecco.", zona: "Lecco", foto: "icone/ponte.jpg" },
+    		{ nome: "Casa del Sarto (Chiuso)", coord: [45.823983, 9.419000], desc: "Luogo in cui viene accolto Renzo in fuga.", zona: "Lecco", foto: "icone/Casa_del_sarto.jpg" },
+    		{ nome: "Monte Resegone", coord: [45.850000, 9.466667], desc: "Ma dopo qualche momento, voltandosi indietro, vide all'orizzonte quella cresta frastagliata di montagne, vide distinto e alto tra quelle il suo Resegone, si sentì tutto rimescolare il sangue... Cap. XI", zona: "Lecco", foto: "icone/Resegone.jpg" },
+    		{ nome: "Lazzaretto di Milano", coord: [45.478042, 9.207292], desc: "Luogo dell’epidemia e dell’incontro tra Renzo e Lucia.", zona: "Milano", foto: "icone/Lazzaretto.jpg" },
+    		{ nome: "Forno delle Grucce", coord: [45.4663, 9.19], desc: "Luogo simbolico dell’assalto popolare a Milano.", zona: "Milano", foto: "icone/forno.jpg" },
+    		{ nome: "Casa dei Promessi Sposi (Via Morone, Milano)", coord: [45.467878, 9.192056], desc: "Abitazione di Manzoni dove scrisse gran parte del romanzo.", zona: "Milano", foto: "icone/casa-milano.jpg" },
+    		{ nome: "Bastioni di Porta Venezia", coord: [45.474381, 9.205011], desc: "Tratto delle mura spagnole e citato nel romanzo.", zona: "Milano", foto: "icone/Bastioni.jpg" },
+    		{ nome: "Convento della Monaca di Monza (Chiesa di San Maurizio)", coord: [45.583397, 9.280467], desc: "Luogo legato alla Monaca di Monza, figura citata nei Promessi Sposi.", zona: "Monza", foto: "icone/monza-monaca.jpg" }
+  		];
+  		// copia questa lista
+  		var luoghiOriginali = [...luoghi];
+
+  		var markers = [];
+  		var listContainer = document.getElementById("luoghiList");
+
+  		function renderList(lista) {
+  			// rimozione vecchi marker
+  			markers.forEach(m => map.removeLayer(m));
+  			markers = [];
+    		listContainer.innerHTML = "";
+    		
+    		lista.forEach((luogo, index) => {
+      			var icon = luogo.zona === "Lecco" ? iconLecco : (luogo.zona === "Milano" ? iconMilano : iconMonza);
+      			// marker con foto
+      			var marker = L.marker(luogo.coord, { icon: icon })
+        			.addTo(map)
+        			.bindPopup(`
+        				<div style= "text-align:center; max-width:200px;">
+        					<img src="${luogo.foto || 'icone/default.jpg'}" alt="${luogo.nome}" style="width:100%; border-radius:8px; margin-bottom:8px;">
+        					<strong>${luogo.nome}</strong><br>
+        					<small>${luogo.desc}</small>
+        				</div>
+					`);
+
+      			markers.push(marker);
+
+      			var item = document.createElement("a");
+      			item.className = "list-group-item list-group-item-action";
+      			item.innerText = luogo.nome;
+      			item.addEventListener("click", function () {
+        			map.setView(luogo.coord, 14);
+        			marker.openPopup();
+        			document.querySelectorAll("#luoghiList .list-group-item").forEach(el => el.classList.remove("active"));
+        			item.classList.add("active");
+      			});
+      			listContainer.appendChild(item);
+			});
+		}
+
+  		renderList(luoghiOriginali);
+
+  		// pulsante "Mostra tutti"
+  		document.getElementById("resetView").addEventListener("click", function () {
+    		map.setView([45.85, 9.39], 11);
+    		renderList(luoghiOriginali);
+    		document.querySelectorAll("#luoghiList .list-group-item").forEach(el => el.classList.remove("active"));
+  		});
+
+  		// pulsante "A-Z Z-A"
+  		document.getElementById("sortBtn").addEventListener("click", function () {
+  			// rimuove i marker precedenti
+  			markers.forEach(m => map.removeLayer(m));
+  			markers = [];
+  			// ordina i luoghi
+  			var sorted = [...luoghi].sort((a, b) => a.nome.localeCompare(b.nome));
+  			// ricrea lista e marker ordinati
+				renderList(sorted);
+		});
+  		document.getElementById("sortDescBtn").addEventListener("click", function () {
+  			markers.forEach(m => map.removeLayer(m));
+ 			 markers = [];
+  			var sortedDesc = [...luoghi].sort((a, b) => b.nome.localeCompare(a.nome));
+  			renderList(sortedDesc);
+		});
+
+		// filtro per zona
+		function filterByZona(zona) {
+  			const filtrati = luoghi.filter(l => l.zona === zona);
+  			let centro, zoom;
+  			if (zona === "Lecco") { centro = [45.85,9.39]; zoom=11; }
+  			else if (zona === "Milano") { centro = [45.4727, 9.19]; zoom=12; }
+  			else if (zona === "Monza") { centro = [45.5840, 9.2756]; zoom=13; }
+  			map.setView(centro, zoom);
+  			renderList(filtrati);
+		}
+
+		document.getElementById("filterLecco").addEventListener("click", () => filterByZona("Lecco"));
+		document.getElementById("filterMilano").addEventListener("click", () => filterByZona("Milano"));
+		document.getElementById("filterMonza").addEventListener("click", () => filterByZona("Monza"));
+
+	});
+	</script>
+
+	<!--script mappa pedonale-->
+	<script src="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.js"></script>
+	<link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.css" />
+
+	<script>
+	document.addEventListener("DOMContentLoaded", function () {
+  		var mapPercorso = L.map('mapPercorso').setView([45.85, 9.40], 13);
+
+  		// mappa base
+  		L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+   			attribution: '&copy; OpenStreetMap contributors'
+  		}).addTo(mapPercorso);
+
+  		// icona per marker
+ 		const iconPercorso = L.icon({
+    		iconUrl: 'icone/icon-lecco.png',
+    		iconSize: [28, 28],
+    		iconAnchor: [14, 28],
+    		popupAnchor: [0, -25]
+  		});
+
+  		// tappe
+  		const tappe = [
+   			{ nome: "1. Casa di Lucia", coord: [45.86118, 9.40254], foto: "icone/casa_di_Lucia.jpg" },
+    		{ nome: "2. Chiesa di Don Abbondio", coord: [45.86169, 9.40375], foto: "icone/chiesa-Olate.jpg" },
+    		{ nome: "3. Palazzotto di Don Rodrigo", coord: [45.86424, 9.40672], foto: "icone/Palazzotto-Don-Rodrigo.jpg" },
+    		{ nome: "4. Convento di Pescarenico", coord: [45.845636, 9.400236], foto: "icone/Chiesa.jpg" },
+    		{ nome: "5. Ponte Azzone Visconti", coord: [45.847450, 9.392650], foto: "icone/ponte.jpg" },
+    		{ nome: "6. Villa Manzoni", coord: [45.852539, 9.399011], foto: "icone/villamanzoni.jpg" }
+  		];
+
+  		var markers = [];
+
+		// marker con popup
+  		tappe.forEach(t => {
+    		var marker = L.marker(t.coord, { icon: iconPercorso })
+      			.addTo(mapPercorso)
+      			.bindPopup(`
+        			<div style="text-align:center; max-width:180px;">
+          				<img src="${t.foto}" alt="${t.nome}" style="width:100%; border-radius:8px; margin-bottom:6px;">
+      					<strong>${t.nome}</strong>
+        			</div>
+      			`);
+    		markers.push(marker);
+ 		 });
+
+  		// Funzione per creare il percorso pedonale reale
+  		var routingControl = L.Routing.control({
+    		waypoints: tappe.map(t => L.latLng(t.coord[0], t.coord[1])),
+    		lineOptions: {
+      			styles: [{ color: '#2e5a88', weight: 5, opacity: 0.8 }]
+    		},
+    		router: L.Routing.osrmv1({
+      			serviceUrl: 'https://router.project-osrm.org/route/v1'
+    		}),
+    		createMarker: function() { return null; }, // marker personalizzati
+    		routeWhileDragging: false,
+    		addWaypoints: false,
+    		show: false
+  		}).addTo(mapPercorso);
+
+  		// Pulsante per centrare sulla prima tappa
+  		document.getElementById("startPercorso").addEventListener("click", function () {
+    		mapPercorso.setView(tappe[0].coord, 16);
+    		routingControl.show();
+  		});
+
+  		// legenda
+  		var legenda = document.getElementById("legendaPercorso");
+
+  		tappe.forEach((t, i) => {
+    		var item = document.createElement("a");
+    		item.className = "list-group-item list-group-item-action";
+    		item.innerHTML = `<strong>${i+1}</strong>. ${t.nome}`;
+    		item.style.cursor = "pointer";
+    		item.addEventListener("click", function() {
+      			mapPercorso.setView(t.coord, 16);
+      			markers[i].openPopup();
+      			document.querySelectorAll("#legendaPercorso .list-group-item").forEach(el => el.classList.remove("active"));
+      			item.classList.add("active");
+    		});
+    		legenda.appendChild(item);
+  		});
+
+	});
+	</script>
+
+	
+</body>
+</html>

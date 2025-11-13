@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catalogo dei Luoghi Manzoniani</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar uguale -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#home">Manzoni e i luoghi manzoniani</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" active href="manzoni.html">Manzoni</a></li>
+          <li class="nav-item"><a class="nav-link" active href="luoghi.html">Catalogo</a></li>
+          <li class="nav-item"><a class="nav-link" href="itinerario.html">Itinerario</a></li>
+          <li class="nav-item"><a class="nav-link" href="#galleria">Galleria</a></li>
+          <li class="nav-item"><a class="nav-link" href="#fonti">Fonti</a></li>
+        </ul>
+        <!-- barra di ricerca -->
+        <form class="d-flex ms-3 align-items-center" role="search" id="searchForm">
+          <i class="bi bi-search search-icon"></i>
+          <input class="form-control search-input" type="search" placeholder="Cerca..." aria-label= "Cerca">
+        </form>
+        <!-- settore lingua -->
+        <div class="language-switcher ms-4">
+          <select class="form-select form-select-sm" id="languageSelect">
+            <option value="it" selected>IT</option>
+            <option value="en">ENG</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <header style="padding-top: 80px;"></header>
+
+  <div class="container my-5">
+    <h1 class="text-center mb-4">Catalogo dei Luoghi Manzoniani</h1>
+    <div class="mb-3">
+      <label for="filtroZona" class="form-label">Filtra per zona:</label>
+      <select id="filtroZona" class="form-select w-auto">
+        <option value="">Tutte le zone</option>
+        <option value="Lecco">Lecco</option>
+        <option value="Milano">Milano</option>
+        <option value="Monza">Monza</option>
+      </select>
+    </div>
+
+    <div id="itemContainer" class="row g-4">
+      <!-- qui verranno generate le card degli item -->
+    </div>
+  </div>
+
+  <!--footer uguale a quello della home-->
+  <footer class="text-white py-5" style="background-color: #2e5a88;">
+    <div class="container text-center">
+
+      <h5 class="fw-bold mb-3">
+        <i class="bi bi-book"></i> Manzoni e i luoghi manzoniani</h5>
+      <p class="mb-4 fst-italic">Progetto di Digital Humanities sui <em>Promessi sposi</em> e i luoghi della memoria letteraria manzoniana.</p>
+
+      <div class="row justify-content-center mb-3">
+        <div class="col-md-4">
+          <h6 class="text-uppercase fw-bold"><i class="bi bi-person-circle"></i>Crediti</h6>
+          <p class="small mb-0">Realizzato da Chiara Virciglio<br>Corso di Digital Humanities - Università di Bologna<br>Anno accademico 2024/2025</p>
+        </div>
+
+        <div class="col-md-4">
+          <h6 class="text-uppercase fw-bold"><i class="bi bi-c-circle"></i>Licenze</h6>
+        </div>
+
+        <div class="col-md-4">
+          <h6 class="text-uppercase fw-bold"><i class="bi bi-envelope"></i> Contatti</h6>
+          <p class="small mb-0">
+            Email: <a href="mailto: chiara.virciglio@unibo.it" class="text-white text-decoration-underline">chiara.virciglio@unibo.com</a>
+            <span class= "d-block mt-1">Tel: <a href="tel:+393661234567" class="text-white text-decoration-underline">+39 3661234567</a></span>
+          </p>
+        </div>
+      </div>
+
+      <!-- senzione social -->
+      <div class="mt-4">
+        <h6 class="text-uppercase fw-bold mb-3">
+          <i class="bi bi-share"></i> Seguici
+        </h6>
+        <div class="d-flex justify-content-center gap-3">
+          <a href="#" class="text-white fs-4" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="text-white fs-4" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="text-white fs-4" aria-label="Twitter"><i class="bi bi-twitter"></i></a>
+          <a href="#" class="text-white fs-4" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+        </div>
+      </div>
+
+      <a href="metadati.xml" target="_blank">📄 Metadati (Dublin Core XML)</a>
+      <a href="xml/tei.xml" target="_blank">📄 TEI XML</a>
+
+      <hr class="border-light">
+      <p class="mb-0">© 2025 Progetto universitario - <strong>Manzoni e i luoghi manzoniani</strong>
+      <span class= "d-block mt-1">Ultimo aggiornamento: novembre 2025</span></p>
+
+    </div>
+  </footer>
+
+  <!--bottone per tornare su-->
+  <button id="scrollTopBtn" title="Torna su">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <script>
+  const luoghiManzoniani = [
+    {
+      titolo: "Casa di Lucia",
+      zona: "Lecco",
+      descrizione: "Tradizionalmente identificata come la casa di Lucia Mondella.",
+      frasi: [
+        "Lucia abitava in una casetta vicina al lago...",
+        "La casa di Lucia era modesta ma accogliente."
+      ],
+      img: "icone/casa_di_Lucia.jpg",
+    },
+    {
+      titolo: "Palazzotto di Don Rodrigo",
+      zona: "Lecco",
+      descrizione: "Dimora signorile di Don Rodrigo.",
+      frasi: [
+        "Il palazzotto di Don Rodrigo dominava il borgo con aria minacciosa.",
+        "Don Rodrigo riceveva i suoi ospiti tra mura ricche e fredde."
+      ],
+      img: "icone/Palazzotto-Don-Rodrigo.jpg",
+    },
+    {
+      titolo: "Castello dell'Innominato",
+      zona: "Lecco",
+      descrizione: "Fortificazione risalente al XIII sec. che ispirò Manzoni per l'ambientazione della residenza dell'Innominato.",
+      frasi: [
+        "Il castello dell'Innominato si ergeva in cima al monte.",
+        "La solitudine delle sue torri incuteva timore a chi vi si avvicinava."
+      ],
+      img: "icone/Castello.jpg",
+    },
+    {
+      titolo: "Convento di Pescarenico",
+      zona: "Lecco",
+      descrizione: "Convento dei Cappuccini dove viveva il personaggio Fra Cristoforo e dove i protagonisti si recano per cercare aiuto. Oggi si possono trovare i resti dell'antico convento e la Chiesa dei Santi Materno e Lucia.",
+      frasi: [
+        "Il convento di Pescarenico offriva riparo e pace ai viandanti.",
+        "Le mura del convento accoglievano chi cercava protezione."
+      ],
+      img: "icone/Chiesa.jpg",
+    },
+    {
+    titolo: "Chiesa di Don Abbondio",
+    zona: "Lecco",
+    descrizione: "Chiesa dei Santi Vitale e Valeria che ispirò quella in cui Don Abbondio officiava.",
+    frasi: [
+      "Don Abbondio cercava conforto tra le mura della chiesa.",
+      "La chiesa era il luogo in cui il parroco meditava e pregava."
+    ],
+    img: "icone/chiesa-Olate.jpg",
+  },
+  {
+    titolo: "Tabernacolo dei Bravi",
+    zona: "Lecco",
+    descrizione: "Punto di ritrovo dei bravi al servizio di Don Rodrigo.",
+    frasi: [
+      "I bravi si radunavano davanti al tabernacolo per i loro piani.",
+      "Il tabernacolo era il simbolo del potere violento dei bravi."
+    ],
+    img: "icone/tabernacolo.jpg",
+  },
+  {
+    titolo: "Villa Manzoni",
+    zona: "Lecco",
+    descrizione: "Villa storica di Lecco legata alla famiglia Manzoni.",
+    frasi: [
+      "La villa dei Manzoni si affacciava sul lago con eleganza.",
+      "La dimora conservava memorie di tempi passati."
+    ],
+    img: "icone/Villamanzoni.jpg",
+  },
+  {
+    titolo: "Ponte Azzone Visconti",
+    zona: "Lecco",
+    descrizione: "Antico ponte che collega le sponde del lago di Lecco.",
+    frasi: [
+      "Dal ponte Azzone Visconti si vedeva l'intero borgo.",
+      "Il ponte era testimone di molte vicende della città."
+    ],
+    img: "icone/ponte.jpg",
+  },
+  {
+    titolo: "Casa del Sarto",
+    zona: "Lecco",
+    descrizione: "Abitazione del sarto locale, amico dei protagonisti.",
+    frasi: [
+      "La casa del sarto era accogliente e piena di vita.",
+      "Il sarto riceveva ospiti con gentilezza e discrezione."
+    ],
+    img: "icone/Casa_del_sarto.jpg",
+  },
+  {
+    titolo: "Monte Resegone",
+    zona: "Lecco",
+    descrizione: "Montagna simbolica dei dintorni di Lecco.",
+    frasi: [
+      "Il Resegone dominava la valle con la sua sagoma frastagliata.",
+      "La vista dal Resegone era mozzafiato e temuta dai viaggiatori."
+    ],
+    img: "icone/Resegone.jpg",
+  },
+  {
+    titolo: "Lazzaretto di Milano",
+    zona: "Milano",
+    descrizione: "Struttura per la quarantena e l’isolamento dei malati.",
+    frasi: [
+      "Il Lazzaretto era desolato e pieno di malati durante la peste.",
+      "Dentro le mura del Lazzaretto si viveva tra paura e speranza."
+    ],
+    img: "icone/Lazzaretto.jpg",
+  },
+  {
+    titolo: "Forno delle Grucce",
+    zona: "Milano",
+    descrizione: "Panificio di Milano preso d'assalto dalla folla durante il tumulto di San Martino del 1628.",
+    frasi: [
+      "Il forno delle Grucce era sempre pieno di odori invitanti.",
+      "Gli abitanti del quartiere frequentavano il forno ogni giorno."
+    ],
+    img: "icone/forno.jpg",
+  },
+  {
+    titolo: "Casa dei Promessi Sposi",
+    zona: "Milano",
+    descrizione: "Casa di Alessandro Manzoni",
+    frasi: [
+      "[L'amore di Renzo e Lucia è un amore che] non può trionfare se non lo si tutela, come un qualcosa di ‘sacro’, dalle difficoltà della vita",
+      "Questo matrimonio non s’ha da fare, né domani, né mai"
+    ],
+    img: "icone/casa-milano.jpg",
+  },
+  {
+    titolo: "Bastioni di Porta Venezia",
+    zona: "Milano",
+    descrizione: "Antica porta fortificata della città di Milano.",
+    frasi: [
+      "I bastioni di Porta Venezia proteggevano l’entrata della città.",
+      "I soldati pattugliavano i bastioni con grande attenzione."
+    ],
+    img: "icone/Bastioni.jpg",
+  },
+  {
+    titolo: "Convento della Monaca di Monza",
+    zona: "Monza",
+    descrizione: "Il monastero di Santa Margherita, dove secondo il romanzo viveva la Monaca di Monza, venne distrutto nel 1944, la chiesa annessa prende il nome di Chiesa dei santi Margherita e Maurizio.",
+    frasi: [
+      "Il convento della Monaca di Monza era austero e silenzioso.",
+      "Tra le mura del convento si consumavano vite tormentate."
+    ],
+    img: "icone/monza-monaca.jpg",
+  }
+];
+
+const container = document.getElementById("itemContainer");
+const filtroSelect = document.getElementById("filtroZona");
+
+function renderItems(zonaFiltro = "") {
+  container.innerHTML = "";
+  const list = zonaFiltro ? luoghiManzoniani.filter(l => l.zona === zonaFiltro) : luoghiManzoniani;
+
+  list.forEach(l => {
+    // trasformiamo le frasi in corsivo
+    const frasiHTML = l.frasi.map(f => `<li><em>${f}</em></li>`).join("");
+    
+    const cardHTML = `
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <a href="${l.link}">
+            <img src="${l.img}" class="card-img-top" alt="${l.titolo}">
+          </a>
+          <div class="card-body">
+            <h5 class="card-title">${l.titolo}</h5>
+            <p class="card-text">${l.descrizione}</p>
+            <ul>
+              ${frasiHTML}  <!-- frasi in corsivo -->
+            </ul>
+            <a href="${l.link}" class="btn btn-outline-primary">Scopri di più</a>
+          </div>
+          <div class="card-footer text-muted">${l.zona}</div>
+        </div>
+      </div>
+    `;
+    container.insertAdjacentHTML("beforeend", cardHTML);
+  });
+}
+
+    // filtro per zona
+    filtroSelect.addEventListener("change", () => {
+      renderItems(filtroSelect.value);
+    });
+
+    // inizializza visualizzazione completa
+    renderItems("");
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

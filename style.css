@@ -1,0 +1,480 @@
+style.css
+
+/* stile generale */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #dfe8dd; /* verde salvia chiaro */
+  font-family: "Georgia", serif;
+  color: #1e2b3a; /* blu */
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+/* navbar */
+.navbar {
+  background-color: #dce7f3 !important; /* azzurro */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: background-color 0.4s ease, padding 0.3s ease;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  color: #2e5a88 !important; /* blu lago */
+  letter-spacing: 0.5px;
+}
+
+.nav-link {
+  color: #2e5a88 !important;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #88a47c !important; /* verde salvia */
+}
+
+/* definizione navbar */
+.navbar.scrolled {
+  background-color: rgba(220, 231, 243, 0.95) !important; /* azzurro chiaro */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  transition: background-color 0.4s ease, padding 0.3s ease;
+  padding: 8px 0; /* navbar compatta */
+}
+
+/* harder */
+.hero {
+  background-image: url("icone/lecco.jpg");
+  background-size: cover;
+  background-position: center 80%;
+  color: white;
+  text-align: center;
+  padding: 160px 20px;
+  position: relative;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(46, 90, 136, 0.5); /* filtro leggero */
+}
+
+.hero h1, .hero p {
+  position: relative;
+  z-index: 1;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+}
+
+.hero p {
+  font-size: 1.3rem;
+  margin-bottom: 40px; /* aggiunge spazio sotto il sottotitolo */
+}
+
+.hero .quote {
+  font-size: italic;
+  font-size: 1.1rem;
+  color: #f5f4ef;
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.4);
+}
+
+.hero .quote .source {
+  display: block;
+  font-size: 0.9rem;
+  margin-top: 5px;
+  opacity: 0.9;
+}
+
+.hero .btn {
+  border-radius: 30px;
+  padding: 10px 25px;
+  font-weight: 500;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.hero .btn:hover {
+  background-color: #88a47c;
+  color: #fff;
+}
+
+/* sezioni */
+section {
+  padding: 80px 0;
+}
+
+section:nth-of-type(even) {
+  background-color: #dce7f3; /* alternanza chiara */
+}
+
+section h2 {
+  font-family: 'Garamond', serif;
+  font-size: 2.2rem;
+  color: #2e5a88;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+section p {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* galleria */
+#luoghi img {
+  border-radius: 10px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+#luoghi img:hover {
+  transform: scale(1.05);
+  box-shadow: 0.4px 10px rgba(
+    0, 0, 0, 0.2);
+}
+
+#manzoni img {
+  max-width: 380px; /* limita la grandezza */
+  border: 3px solid #d4e4d0; /*bordo verde salvia */
+}
+
+#manzoni blockquote {
+  border-left: 4px solid #b3c8af;
+  padding-left: 10px;
+  font-size: 1.1rem;
+  color: #4a5a4b;
+}
+
+.figure-caption {
+  color: #4a5a4b; /* verde/grigio */
+  font-size: 0.9rem;
+  margin-top: 5px;
+}
+
+/* footer */
+footer {
+  background-color: #2e5a88;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+  color: #f5f4ef;
+}
+
+/* spazio tra icona e testo nel footer */
+footer i {
+  margin-right: 6px;
+  vertical-align: middle;
+}
+
+/* icone social */
+footer a i {
+  transition: color 0.3s ease, transform 0.3 ease;
+}
+
+footer a:hover i {
+  color: #88a47c;
+  transform: scale(1.15);
+}
+
+/* animazione fade-in */
+.fade-element {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+.fade-element.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* stile per la didascalia dell'immagine */
+.figure-caption {
+  color: #4a5a4b; /* verde-grigio */
+  font-size: 0.85rem;
+  margin-top: 5px;
+  line-height: 1.4;
+}
+.figure-caption .fonte {
+  display: block;
+  font-size: 0.75rem;
+  color: #6c7a6d; /* più tenue */
+}
+
+/* icona barra di ricerca */
+#searchForm {
+  position: relative;
+}
+
+.search-input {
+  width: 0;
+  opacity: 0;
+  transition: width 0.4s ease, opacity 0.4s ease;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  padding: 5px 10px;
+  background-color: #f0f4f8;
+  border-radius: 1px solid #ccc;
+}
+
+.search-icon {
+  color: #2e5a88;
+  font-size: 1.3rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.search-icon:hover {
+  color: #88a47c;
+}
+
+/* barra (quando si clicca sull'icona) */
+#searchForm.active .search-input {
+  width: 160px;
+  opacity: 1;
+  margin-left: 8px;
+}
+
+/* sezione lingua */
+.language-switcher select {
+  background-color: #f5f7fa;
+  border: 1px solid #dce7f3;
+  color: #2e5a88;
+  border-radius: 20px;
+  padding: 4px 8px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-left: 20px; /* distanza dal campo di ricerca */
+}
+.language-switcher select:hover {
+  background-color: #e8f1e8;
+} 
+
+/* bottone per tornare su */
+#scrollTopBtn {
+  display: none; /* così facendo rimane inizialmente nascosto */
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 1000;
+  background-color: #88a47c;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+#scrollTopBtn:hover {
+  background-color: #6e8f66;
+  transform: scale(1.1);
+}
+#scrollTobBtn i {
+  margin-top: 1px;
+}
+
+/* adattamento per schermi piccoli (telefono) */
+@media (max-width: 768px) {
+
+  /* titolo e testi harder */
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+  .hero p, .hero .quote {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+  
+  /* navbar compatta */
+  .navbar {
+    padding: 10px 0;
+  }
+
+  /* immagini */
+  #manzoni img {
+    max-width: 80%;
+  }
+  #luoghi .card-title {
+    font-size: 1rem;
+  }
+  #luoghi .card-text {
+    font-size: 0.9rem;
+  }
+
+  /* footer */
+  footer {
+    font-size: 0.8rem;
+    padding: 30px 10px;
+  }
+  footer .col-md-4 {
+    margin-bottom: 20px;
+  }
+  footer p, footer h6 {
+    line-height: 1.4;
+  }
+  footer span.d-block {
+    display: block;
+    margin-top: 5px;
+  }
+}
+
+
+
+/* pagina Manzoni: hero */
+.hero-manzoni {
+  background-image: url("icone/firma.jpg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 500px;
+  position: relative;
+  text-align: center;
+  color: white;
+  position: relative;
+  padding: 60px 20px;
+  padding-bottom: 30px !important;
+}
+
+.hero-manzoni::after {
+  content: none;
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(46, 90, 136, 0.4); /* filtro */
+}
+
+/* margini sopra sezione biografia */
+#biografia {
+  margin-top: 0 !important;
+}
+
+.divider {
+  width: 70%; 
+  margin: 0 auto;
+  border: 0;
+  height: 2px;
+  background: linear-gradient(to right, transparent, #2e5a88, transparent);
+}
+
+.hero-manzoni h1, .hero-manzoni p {
+  position: relative;
+  z-index: 1;
+  color: #2e5a88;
+}
+
+/* pulsante opere */
+.btn-outline-primary {
+  border-color: #2e5a88;
+  color: #2e5a88;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-primary:hover {
+  background-color: #2e5a88;
+  color: #fff;
+}
+
+/* immagini uniformi per opere e manoscritto */
+.uniform-img {
+  width: 100%;
+  height: 250px;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+
+
+/* pagina catalogo */
+.card-img-top {
+  object-fit: contain;
+  height: 200px;
+}
+
+
+
+/* pagina itinerario */
+.page-title {
+  margin-top: 120px; /* distanza dalla navbar */
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 0.5px;
+  margin-bottom: 25px;
+}
+
+/* pulsanti di ordinamento */
+.btn-group-ordina {
+  margin-right: 5%;
+}
+
+/* pulsanti di zona */
+.btn-group-ordina {
+  margin-left: 5%;
+} 
+
+/* uniforma altezza pulsanti e spazio */
+#itinerario .btn {
+  padding: 6px 12px;
+  border-radius: 10px;
+  font-weight: 500;
+}
+
+#itinerario {
+  margin-bottom: 40px;
+}
+
+/* pagina itinerario: mappa */
+#map {
+  height: 600px;
+  width: 100%;
+  border: 2px solid #dfe8dd;
+  border-radius: 10px;
+}
+
+/* lista luoghi */
+#luoghiList .list-group-item {
+  cursor: pointer;
+  color: #2e5a88; /* blu lago */
+  border: none;
+  border-left: 4px solid transparent;
+  transition: all 0.3s ease;
+  background-color: #f5f7f9;
+}
+
+#luoghiList .list-group-item:hover {
+  background-color: #dce7f3;
+  border-left: 4px solid #88a47c;
+}
+
+#luoghiList .list-group-item.active {
+  background-color: #88a47c;
+  color: white;
+  border-left: 4px solid #2e5a88;
+}
+
+/* Colori divisi per luoghi */
+#luoghiList .list-group-item.lecco {
+    border-left: 5px solid #28a745; /* verde */
+}
+
+#luoghiList .list-group-item.milano {
+    border-left: 5px solid #007bff; /* blu */
+}
+
+#luoghiList .list-group-item.monza {
+    border-left: 5px solid #ffc107; /* giallo */
+}
+
+/* evidenzia elemento selezionato */
+#luoghiList .list-group-item.active {
+    background-color: rgba(0,0,0,0.1);
+    font-weight: bold;
+}
+
