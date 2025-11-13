@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+	<!-- charset (visualizzazione lettere accentate) -->
+	<meta charset="UTF-8">
+	<!-- viewport (rende responsive il sito) -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Manzoni e i luoghi manzoniani</title>
+
+	<!-- collegamento a Bottostrap CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	<!-- collegamento a file CSS personalizzato -->
+	<link rel="stylesheet" href="style.css">
+	<!-- collegamento a Bootstrap JS -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
+
+	<!-- icone Bootstrap -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+	<!-- icone Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+
+	<!-- navbar uguale a qella della home -->
+	<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm">
+		<div class="container">
+			<a class="navbar-brand fw-bold" href="#home">Manzoni e i luoghi manzoniani</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav ms-auto">
+					<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+					<li class="nav-item"><a class="nav-link" active href="manzoni.html">Manzoni</a></li>
+					<li class="nav-item"><a class="nav-link" active href="luoghi.html">Catalogo</a></li>
+					<li class="nav-item"><a class="nav-link" href="itinerario.html">Itinerario</a></li>
+					<li class="nav-item"><a class="nav-link" href="#galleria">Galleria</a></li>
+					<li class="nav-item"><a class="nav-link" href="#fonti">Fonti</a></li>
+				</ul>
+				<!-- barra di ricerca -->
+				<form class="d-flex ms-3 align-items-center" role="search" id="searchForm">
+					<i class="bi bi-search search-icon"></i>
+					<input class="form-control search-input" type="search" placeholder="Cerca..." aria-label= "Cerca">
+				</form>
+				<!-- settore lingua -->
+				<div class="language-switcher ms-4">
+					<select class="form-select form-select-sm" id="languageSelect">
+						<option value="it" selected>IT</option>
+						<option value="en">ENG</option>
+					</select>
+				</div>
+			</div>
+		</div>
+	</nav>
+
+	<!-- HEADER -->
+	<header class="hero-manzoni d-flex flex-column justify-content-center align-items-center text-center text-white">
+    	<div class="overlay"></div>
+    	<div class="hero-content">
+     		<h1 class="display-4 fw-bold fade-element">Alessandro Manzoni</h1>
+    		<p class="lead fst-italic fade-element">1785-1873</p>
+    	</div>
+ 	</header>
+
+	<!--riga per dividere harder e sezione biografia-->
+ 	<hr class="divider">
+
+	<!-- BIOGRAFIA -->
+	<section id="biografia" class="container my-5">
+    	<h2 class="fw-bold text-center mb-4">Vita e formazione</h2>
+		<div class="row align-items-center">
+    		<div class="col-md-5 text-center mb-3">
+    			<figure>
+        			<img src="icone/Manzoni2.jpg" alt="Monumento di Alessandro Manzoni a Lecco" class="img-fluid rounded shadow">
+        			<figcaption class="small fst-italic mt-2">Foto del monumento di Alessandro Manzoni a Lecco<br>
+        			<span class="fonte">Fonte: Wikimedia Commons</span>
+        			</figcaption>
+    			</figure>
+      		</div>
+      		<div class="col-md-7">
+        		<p>Alessandro Manzoni nacque a Milano il 7 marzo del 1785, figlio di Giulia Beccaria e del conte Pietro Manzoni. In seguto alla separazione dei genitori frequentò diversi collegi religiosi che lo portarono a mutare il suo rapporto con la religione, arrivando a dichiararsi ateo. Venendo da una famiglia borghese colta ricevette un'educazione iniziale incentrata sullo studio della lingua francese e dei classici. Durante la giovinezza, viaggiò molto in Europa, approfondendo studi letterari, filosofici e religiosi. La sua formazione culturale e morale fu segnata dal pensiero illuminista e dalla religiosità cattolica che influenzarono profondamente la sua produzione letteraria. Questi anni di studio e riflessione prepararono la strada al suo capolavoro, I Promessi Sposi, che rappresenta un punto di riferimento nella letteratura italiana e nell’evoluzione del romanzo moderno. </p>
+      		</div>
+    	</div>
+  	</section>
+
+  	<!-- OPERE -->
+ 	<section id="opere" class="py-5" style="background-color: #dce7f3;">
+    	<div class="container">
+      		<h2 class="fw-bold text-center mb-4">Le opere principali</h2>
+      		<div class="row text-center">
+        		<div class="col-md-4 mb-4">
+          			<div class="card shadow-sm">
+          				<figure class="card shadow-sm">
+            				<img src="icone/libro.jpg" class="card-img-top uniform-img" alt="I Promessi Sposi">
+            				<figcaption class="small fst-italic mt-2">
+            				Copertina di <em>I Promessi Sposi</em><br><span class="fonte">Fonte: Wikimedia Commons</span>
+         					</figcaption>
+           					<div class="card-body">
+              					<h5 class="card-title"><strong> Promessi Sposi</strong></h5>
+              					<p class="card-text">Il romanzo che fondò la lingua e l’identità italiana.</p>
+            				</div>
+        				</figure>
+          			</div>
+        		</div>
+        		<div class="col-md-4 mb-4">
+          			<div class="card shadow-sm">
+            			<figure class="card shadow-sm">
+            				<img src="icone/inni.jpg" class="card-img-top uniform-img" alt="Inni Sacri">
+            				<figcaption class="small fst-italic mt-2">
+            					Disegno raffigurante Alessandro Manzoni<br><span class="fonte">Fonte: Picryl</span>
+          					</figcaption>
+            				<div class="card-body">
+              					<h5 class="card-title"><strong>Inni Sacri</strong></h5>
+              					<p class="card-text">Cinque componimenti religiosi che riflettono la fede e il rinnovamento morale.</p>
+            				</div>
+            			</figure>	
+          			</div>
+       			</div>
+    			<div class="col-md-4 mb-4">
+          			<div class="card shadow-sm">
+            			<figure class="card shadow-sm">
+            				<img src="icone/5maggio.jpg" class="card-img-top uniform-img" alt="Il Cinque Maggio">
+            				<figcaption class="small fst-italic mt-2">
+            					Illustrazione da Opere varie di Alessandro Manzoni. Milano, Fratelli Rechiedei, 1881<br><span class="fonte">Fonte: Wikimedia Commons</span>
+      						</figcaption>
+        					<div class="card-body">
+              					<h5 class="card-title"><strong>Il Cinque Maggio</strong></h5>
+              					<p class="card-text">Ode dedicata a Napoleone. Tra storia, politica e riflessione cristiana.</p>
+            				</div>
+        				</figure>
+          			</div>
+        		</div>
+      		</div>
+
+      		<!--bottone per andare a tutte le opere-->
+      		<div class="text-center mt-4">
+      			<a href="#opere2" class="btn btn-outline-primary btn-lg">Scopri tutte le opere</a>
+      		</div>
+    	</div>
+  	</section>
+
+	<!-- SEZIONE MANOSCRITTO -->
+  	<section id="manoscritto" class="container my-5 text-center">
+    	<h2 class="fw-bold mb-4">Il manoscritto dei Promessi Sposi</h2>
+    	<p class="lead mb-4">Alcune immagini dal testo originale e dalle prime edizioni dell’opera.</p>
+    	<div class="row">
+      		<div class="col-md-4 mb-4">
+      			<figure>
+        			<img src="icone/manoscritto1.jpg" alt="Pagina della prima stesura autografa dei Promessi Sposi / Fermo e Lucia" class="img-fluid rounded shadow-sm uniform-img">
+        			<figcaption class="small fst-italic mt-2">
+      					Pagina autografa dei <em>Promessi Sposi</em><br><span>Fonte: Milano, Biblioteca Nazionale Braidense; Manzoni Online, <https://www.alessandromanzoni.org/manoscritti/624>
+						(URL consultato il 13 novembre 2025)</span>
+        			</figcaption>
+      			</figure>
+      		</div>
+      		<div class="col-md-4 mb-4">
+      			<figure>
+        			<img src="icone/manoscritto2.jpg" alt="Pagina 22 del primo manoscritto corretta da Manzoni" class="img-fluid rounded shadow-sm uniform-img">
+        			<figcaption class="small fst-italic mt-2">
+      					Pagina 22 del primo manoscritto dei <em>Promessi Sposi</em> con correzioni autografe di Manzoni<br><span>Fonte: Milano, Biblioteca Nazionale Braidense; Manzoni Online, <https://www.alessandromanzoni.org/manoscritti/624>
+						(URL consultato il 13 novembre 2025)</span>
+        			</figcaption>
+      			</figure>
+      		</div>
+      		<div class="col-md-4 mb-4">
+      			<figure>
+        			<img src="icone/edizione.jpg" alt="Edizione 1840 dei Promessi Sposi" class="img-fluid rounded shadow-sm uniform-img">
+        			<figcaption class="small fst-italic mt-2">
+    					Edizione del 1840 de <em>I Promessi Sposi</em><br><span class="fonte">Fonte: Wikimedia Commons</span>
+					</figcaption>
+				</figure>
+      		</div>
+
+			<!--bottone per andare al manoscritto completo-->
+			<div class="text-center mt-4">
+      			<a href="#manoscritto3" class="btn btn-outline-primary btn-lg">Il manoscritto</a>
+      		</div>
+		</div>
+  	</section>
+	
+
+	<!--footer uguale a quello della home-->
+	<footer class="text-white py-5" style="background-color: #2e5a88;">
+		<div class="container text-center">
+
+			<h5 class="fw-bold mb-3">
+				<i class="bi bi-book"></i> Manzoni e i luoghi manzoniani</h5>
+			<p class="mb-4 fst-italic">Progetto di Digital Humanities sui <em>Promessi sposi</em> e i luoghi della memoria letteraria manzoniana.</p>
+
+			<div class="row justify-content-center mb-3">
+				<div class="col-md-4">
+					<h6 class="text-uppercase fw-bold"><i class="bi bi-person-circle"></i>Crediti</h6>
+					<p class="small mb-0">Realizzato da Chiara Virciglio<br>Corso di Digital Humanities - Università di Bologna<br>Anno accademico 2024/2025</p>
+				</div>
+
+				<div class="col-md-4">
+					<h6 class="text-uppercase fw-bold"><i class="bi bi-c-circle"></i>Licenze</h6>
+				</div>
+
+				<div class="col-md-4">
+					<h6 class="text-uppercase fw-bold"><i class="bi bi-envelope"></i> Contatti</h6>
+					<p class="small mb-0">
+						Email: <a href="mailto: chiara.virciglio@unibo.it" class="text-white text-decoration-underline">chiara.virciglio@unibo.com</a>
+						<span class= "d-block mt-1">Tel: <a href="tel:+393661234567" class="text-white text-decoration-underline">+39 3661234567</a></span>
+					</p>
+				</div>
+			</div>
+
+			<!-- senzione social -->
+			<div class="mt-4">
+				<h6 class="text-uppercase fw-bold mb-3">
+					<i class="bi bi-share"></i> Seguici
+				</h6>
+				<div class="d-flex justify-content-center gap-3">
+					<a href="#" class="text-white fs-4" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+					<a href="#" class="text-white fs-4" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+					<a href="#" class="text-white fs-4" aria-label="Twitter"><i class="bi bi-twitter"></i></a>
+					<a href="#" class="text-white fs-4" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+				</div>
+			</div>
+
+			<a href="metadati.xml" target="_blank">📄 Metadati (Dublin Core XML)</a>
+  			<a href="xml/tei.xml" target="_blank">📄 TEI XML</a>
+
+			<hr class="border-light">
+			<p class="mb-0">© 2025 Progetto universitario - <strong>Manzoni e i luoghi manzoniani</strong>
+			<span class= "d-block mt-1">Ultimo aggiornamento: novembre 2025</span></p>
+
+		</div>
+	</footer>
+
+	<!--bottone per tornare su-->
+	<button id="scrollTopBtn" title="Torna su">
+		<i class="fas fa-arrow-up"></i>
+	</button>
+
+	<!-- script JS -->
+	<script> // fa comparire elementi quando entrano nello schermo
+		const fadeElements = document.querySelectorAll('.fade-element');
+
+		const observer = new IntersectionObserver (entries => {
+			entries.forEach(entry => {
+				if (entry.isIntersecting) {
+					entry.target.classList.add('visible');
+				}
+			});
+		}, { threshold: 0.3 });
+
+		fadeElements.forEach(el => observer.observe(el));
+	</script>
+
+	<script>
+	window.addEventListener("scroll", function() {
+		const navbar = document.querySelector(".navbar");
+		if (window.scrollY > 50) {
+			navbar.classList.add("scrolled");
+		} else {
+			navbar.classList.remove("scrolled");
+		}
+	});
+	</script>
+
+	<!-- barra di ricerca -->
+	<script>
+	document.querySelector(".search-icon").addEventListener("click", function() {
+		const form = document.querySelector("#searchForm");
+		form.classList.toggle("active");
+	});
+	</script>
+
+	<!--bottone per tornare su-->
+	<script>
+		const scrollBtn = document.getElementById("scrollTopBtn");
+		window.onscroll = function () {
+			if (document.body.scrollTop > 300 || document.documentElement.scrollTop >300) {
+				scrollBtn.style.display = "block";
+			} else {
+				scrollBtn.style.display = "none";
+			}
+		};
+		scrollBtn.addEventListener("click", function(){
+			window.scrollTo({ top: 0, behavior: "smooth" });
+		});
+	</script>
+	
+</body>
+</html>

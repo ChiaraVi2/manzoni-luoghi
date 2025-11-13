@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Manzoni e i luoghi manzoniani</title>
+        <author>Chiara Virciglio</author>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Progetto universitario - Corso di Digital Humanities, Università di Bologna</publisher>
+        <date>2025-11</date>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>I Promessi Sposi</title>
+          <author>Alessandro Manzoni</author>
+          <pubPlace>Milano</pubPlace>
+          <date>1840</date>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>TEI creato come rappresentazione digitale del sito "Manzoni e i luoghi manzoniani". Contiene sezioni su Manzoni, opere, manoscritti, luoghi manzoniani, mappa e itinerario pedonale.</p>
+      </projectDesc>
+    </encodingDesc>
+  </teiHeader>
+
+  <text>
+    <body>
+
+      <!-- HOME / introduzione -->
+      <div type="home" xml:id="home">
+        <head>Manzoni e i luoghi manzoniani</head>
+        <p>Progetto di Digital Humanities sui <hi rend="italic">Promessi sposi</hi> e i luoghi della memoria letteraria manzoniana.</p>
+      </div>
+
+      <!-- MANZONI -->
+      <div type="manzoni" xml:id="manzoni">
+        <head>Alessandro Manzoni (1785-1873)</head>
+        <div type="biografia">
+          <head>Vita e formazione</head>
+          <p>Alessandro Manzoni nacque a Milano il 7 marzo del 1785, figlio di Giulia Beccaria e del conte Pietro Manzoni. Dopo la separazione dei genitori frequentò diversi collegi religiosi che influenzarono il suo rapporto con la religione. Provenendo da una famiglia borghese colta ricevette un'educazione iniziale incentrata sullo studio della lingua francese e dei classici. Durante la giovinezza viaggiò in Europa approfondendo studi letterari, filosofici e religiosi. La sua formazione culturale fu segnata dal pensiero illuminista e dalla religiosità cattolica, che influenzarono profondamente la sua produzione letteraria, preparando la strada al capolavoro <hi rend="italic">I Promessi Sposi</hi>.</p>
+          <figure>
+            <graphic url="icone/Manzoni2.jpg"/>
+            <figDesc>Monumento di Alessandro Manzoni a Lecco</figDesc>
+            <note>Fonte immagine: Wikimedia Commons</note>
+          </figure>
+        </div>
+
+        <div type="opere">
+          <head>Le opere principali</head>
+          <list>
+            <item>
+              <title>I Promessi Sposi</title>
+              <p>Il romanzo che fondò la lingua e l’identità italiana.</p>
+              <figure>
+                <graphic url="icone/libro.jpg"/>
+                <figDesc>Copertina dell'opera</figDesc>
+                <note>Fonte immagine: Wimikimedia Commons</note>
+              </figure>
+            </item>
+            <item>
+              <title>Inni Sacri</title>
+              <p>Cinque componimenti religiosi che riflettono la fede e il rinnovamento morale.</p>
+              <figure>
+                <graphic url="icone/inni.jpg"/>
+                <figDesc>Dipinto di A. Manzoni</figDesc>
+                <note>Fonte immagine: Picryl</note>
+              </figure>
+            </item>
+            <item>
+              <title>Il Cinque Maggio</title>
+              <p>Ode dedicata a Napoleone, tra storia, politica e riflessione cristiana.</p>
+              <figure>
+                <graphic url="icone/5maggio.jpg"/>
+                <figDesc>Illustrazione del Cinque Maggio</figDesc>
+                <note>Fonte immagine: Wikimedia Commons</note>
+              </figure>
+            </item>
+          </list>
+        </div>
+
+        <div type="manoscritto">
+          <head>Il manoscritto dei Promessi Sposi</head>
+          <p>Alcune immagini dal testo originale e dalle prime edizioni dell’opera.</p>
+          <figure>
+            <graphic url="icone/manoscritto1.jpg"/>
+            <figDesc>Pagina della prima stesura autografa dei Promessi Sposi / Fermo e Lucia</figDesc>
+            <note>Fonte immagine: Milano, Biblioteca Nazionale Braidense; Manzoni Online, (URL consultato il 13 novembre 2025)</note>
+          </figure>
+          <figure>
+            <graphic url="icone/manoscritto2.jpg"/>
+            <figDesc>Pagina 22 del primo manoscritto corretta da Manzoni</figDesc>
+            <note>Fonte immagine: Milano, Biblioteca Nazionale Braidense; Manzoni Online, (URL consultato il 13 novembre 2025)</note>
+          </figure>
+          <figure>
+            <graphic url="icone/edizione.jpg"/>
+            <figDesc>Edizione 1840 dei Promessi Sposi</figDesc>
+            <note>Fonte immagine: Wikimedia Commons</note>
+          </figure>
+        </div>
+      </div>
+
+      <!-- LUOGHI MANZONIANI -->
+      <div type="luoghi" xml:id="luoghi">
+        <head>Luoghi manzoniani</head>
+        <list>
+          <place xml:id="casa_lucia">
+            <name>Casa di Lucia</name>
+            <location>Lecco, Italia</location>
+            <p>Tradizionalmente identificata come la casa di Lucia Mondella.</p>
+            <graphic url="icone/casa_di_Lucia.jpg"/>
+            <note>Fonte immagine: Wikimedia Commons</note>
+          </place>
+          <place xml:id="palazzotto_don_rodrigo">
+            <name>Palazzotto di Don Rodrigo</name>
+            <location>Olate, Lecco, Italia</location>
+            <p>Dimora nobiliare ritenuta la residenza del signorotto locale.</p>
+            <graphic url="icone/Palazzotto-Don-Rodrigo.jpg"/>
+            <note>Fonte immagine: Comune di Lecco</note> 
+          </place>
+          <place xml:id="castello_innominato">
+            <name>Castello dell’Innominato</name>
+            <location>Vercurago, Lecco, Italia</location>
+            <p>Fortezza medievale citata come rifugio dell’Innominato.</p>
+            <graphic url="icone/Castello.jpg"/>
+            <note>Fonte immagine: Wikimedia Commons</note>
+          </place>
+          <place xml:id="convento_pescarenico">
+            <name>Convento di Pescarenico</name>
+            <location>Lecco, Italia</location>
+            <p>L’antico convento dei cappuccini, dimora di Fra Cristoforo.</p>
+            <graphic url="icone/Chiesa.jpg"/>
+            <note>Fonte immagine: Wikimedia Commons</note>
+          </place>
+          <place xml:id="chiesa_don_abbondio">
+            <name>Chiesa di Don Abbondio</name>
+            <location>Olate, Lecco, Italia</location>
+            <p>Chiesa dei Santi Vitale e Valeria, associata al curato Don Abbondio.</p>
+            <graphic url="icone/chiesa-Olate.jpg"/>
+            <note>Fonte immagine: Wikimedia Commons</note>
+          </place>
+          <place xml:id="tabernacolo_bravi">
+            <name>Tabernacolo dei Bravi</name>
+            <location>Lecco, Italia</location>
+            <p>Luogo d'incontro tra Don Abbondio e i Bravi, dove questi ultimi gli intimano di non sposare Renzo e Lucia.</p>
+            <graphic url="icone/tabernacolo.jpg"/>
+            <note>Fonte immagine: eccoLecco</note>
+          </place>
+          <place xml:id="villa_manzoni">
+            <name>Villa Manzoni</name>
+            <location>Lecco, Italia</location>
+            <p>Residenza familiare di Alessandro Manzoni, oggi museo civico.</p>
+            <graphic url="icone/villamanzoni.jpg"/>
+            <note>Fonte immagine: Wikimedia Commons</note>
+          </place>
+          <place xml:id="ponte_azzone_visconti">
+            <name>Ponte Azzone Visconti</name>
+            <location>Lecco, Italia</location>
+            <p>Antico ponte sul fiume Adda, simbolo di Lecco.</p>
+            <graphic url="icone/ponte.jpg"/>
+            <note>Fonte immagine: Wikimedia Commons</note>
+          </place>
+          <place xml:id="casa_del_sarto">
+            <name>Casa del sarto</name>
+            <Location>Lecco</Location>
+            <p>Abitazione del sarto amico dei protagonisti</p>
+            <graphic url="icone/Casa_del_sarto.jpg"/>
+            <note>Fonte immagine: Wikimedia Commons</note>
+          </place>
+          <place xml:id="monte_resegone">
+            <name>Monte Resegone</name>
+            <location>Lecco, Italia</location>
+            <p>Montagna citata nel romanzo; panorami distinti per Renzo. Cap. XI</p>
+            <graphic url="icone/Resegone.jpg"/>
+            <note>Fonte immagine: Wikimedia Commons</note>
+          </place>
+          <place xml:id="lazzaretto_milano">
+            <name>Lazzaretto di Milano</name>
+            <location>Milano, Italia</location>
+            <p>Luogo dell’epidemia e dell’incontro tra Renzo e Lucia.</p>
+            <graphic url="icone/Lazzaretto.jpg"/>
+            <note>Fonte immagine: Wikimedia Commons</note>
+          </place>
+          <place xml:id="forno_grucce">
+            <name>Forno delle Grucce</name>
+            <location>Milano, Italia</location>
+            <p>Luogo simbolico dell’assalto popolare a Milano.</p>
+            <graphic url="icone/forno.jpg"/>
+            <note>Fonte immagine: Wikimedia Commons</note>
+          </place>
+          <place xml:id="casa_promessi_sposi">
+            <name>Casa dei Promessi Sposi (Via Morone, Milano)</name>
+            <location>Milano, Italia</location>
+            <p>Abitazione di Manzoni dove scrisse gran parte del romanzo.</p>
+            <graphic url="icone/casa-milano.jpg"/>
+            <note>Fonte immagine: Wikimedia Commons</note>
+          </place>
+          <place xml:id="bastioni_porta_venezia">
+            <name>Bastioni di Porta Venezia</name>
+            <location>Milano, Italia</location>
+            <p>Tratto delle mura spagnole citato nel romanzo.</p>
+            <graphic url="icone/Bastioni.jpg"/>
+            <note>Fonte immagine: Wikimedia Commons</note>
+          </place>
+          <place xml:id="convento_monaca_monza">
+            <name>Convento della Monaca di Monza (Chiesa di San Maurizio)</name>
+            <location>Monza, Italia</location>
+            <p>Luogo legato alla Monaca di Monza, figura citata nei Promessi Sposi.</p>
+            <graphic url="icone/monza-monaca.jpg"/>
+            <note>Fonte immagine: Wikimedia Commons</note>
+          </place>
+        </list>
+      </div>
+
+      <!--MAPPA-->
+      <div type="mappa-itinerario" xml:id="mappa">
+        <head>Mappa dei luoghi manzoniani a Lecco</head>
+        <p>Questa mappa mostra il percorso pedonale attraverso i principali luoghi citati nei Promessi Sposi a Lecco. Ogni tappa corrisponde a un luogo significativo menzionato nel romanzo o legato alla vita di Alessandro Manzoni.</p>
+        <figure>
+          <graphic url="icone/mappa-lecco.jpg"/>
+          <figDesc>Mappa illustrativa del percorso manzoniano a Lecco</figDesc>
+        </figure>
+      </div>
+
+
+      <!-- ITINERARIO -->
+      <div type="itinerario" xml:id="itinerario">
+        <head>Percorso pedonale nei luoghi manzoniani di Lecco</head>
+        <list>
+          <place xml:id="tappa1">
+            <name>Casa di Lucia</name>
+            <graphic url="icone/casa_di_Lucia.jpg"/>
+          </place>
+          <place xml:id="tappa2">
+            <name>Chiesa di Don Abbondio</name>
+            <graphic url="icone/chiesa-Olate.jpg"/>
+          </place>
+          <place xml:id="tappa3">
+            <name>Palazzotto di Don Rodrigo</name>
+            <graphic url="icone/Palazzotto-Don-Rodrigo.jpg"/>
+          </place>
+          <place xml:id="tappa4">
+            <name>Convento di Pescarenico</name>
+            <graphic url="icone/Chiesa.jpg"/>
+          </place>
+          <place xml:id="tappa5">
+            <name>Ponte Azzone Visconti</name>
+            <graphic url="icone/ponte.jpg"/>
+          </place>
+          <place xml:id="tappa6">
+            <name>Villa Manzoni</name>
+            <graphic url="icone/villamanzoni.jpg"/>
+          </place>
+        </list>
+      </div>
+
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <dc:title>Manzoni e i luoghi manzoniani</dc:title>
+  <dc:creator>Chiara Virciglio</dc:creator>
+  <dc:description>
+    Sito web realizzato come progetto di Digital Humanities dedicato ai luoghi manzoniani citati ne "I Promessi Sposi" di Alessandro Manzoni. 
+    Include catalogo interattivo, mappa e percorsi letterari.
+  </dc:description>
+  <dc:subject>Letteratura italiana, Alessandro Manzoni, I Promessi Sposi, Luoghi letterari, Digital Humanities</dc:subject>
+  <dc:publisher>Università degli Studi di Bologna</dc:publisher>
+  <dc:contributor>Chiara Virciglio</dc:contributor>
+  <dc:date>2025</dc:date>
+  <dc:language>it</dc:language>
+  <dc:type>Website</dc:type>
+  <dc:format>HTML5; CSS3; JavaScript; XML; TEI</dc:format>
+  <dc:identifier>https://chiaravirciglio.github.io</dc:identifier>
+  <dc:rights>Creative Commons BY-NC-SA 4.0</dc:rights>
+</metadata>
