@@ -1,11 +1,39 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
+
+  <!-- charset (visualizzazione lettere accentate) -->
   <meta charset="UTF-8">
+  <!-- viewport (rende responsive il sito) -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Catalogo dei Luoghi Manzoniani</title>
+  <title>Manzoni e i luoghi manzoniani</title>
+  
+  <!--metadati DC-->
+  <meta name="DC.Title" content="Manzoni e i luoghi manzoniani">
+  <meta name="DC.Creator" content="Chiara Virciglio">
+  <meta name="DC.Subject" content="Letteratura italiana, Alessandro Manzoni, I Promessi Sposi, Luoghi letterari, Digital Humanities">
+  <meta name="DC.Description" content="Sito web realizzato come progetto di Digital Humanities dedicato ai luoghi manzoniani citati ne I Promessi Sposi di Alessandro Manzoni. Include biografia di Alessandro Manzoni, catalogo interattivo, mappa e percorsi letterari.">
+  <meta name="DC.Publisher" content="Università degli Studi di Bologna">
+  <meta name="DC.Contributor" content="Chiara Virciglio">
+  <meta name="DC.Date" content="15/01/2026">
+  <meta name="DC.Type" content="Sito web">
+  <meta name="DC.Format" content="HTML/CSS/JS">
+  <meta name="DC.Identifier" content="https://chiaravirciglio.github.io">
+  <meta name="DC.language" content="It">
+  <meta name="DC.Rights" content="Creative Commons BY-NC-SA 4.0">
+
+  <!-- collegamento a Bottostrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- collegamento a file CSS personalizzato -->
   <link rel="stylesheet" href="style.css">
+  <!-- collegamento a Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
+
+  <!-- icone Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+  <!-- icone Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
 
@@ -56,7 +84,7 @@
     </div>
 
     <div id="itemContainer" class="row g-4">
-      <!-- qui verranno generate le card degli item -->
+      <!-- genera le card degli item -->
     </div>
   </div>
 
@@ -122,8 +150,8 @@
       zona: "Lecco",
       descrizione: "Tradizionalmente identificata come la casa di Lucia Mondella.",
       frasi: [
-        "Lucia abitava in una casetta vicina al lago...",
-        "La casa di Lucia era modesta ma accogliente."
+        "Aveva quella casetta un piccolo cortile dinanzi, che la separava dalla strada, ed era cinto da un murettino.",
+        "Passarono anche, pian piano, davanti alla nostra povera casetta: la più quieta di tutte, giacchè non c'era più nessuno."
       ],
       img: "icone/casa_di_Lucia.jpg",
     },
@@ -132,8 +160,8 @@
       zona: "Lecco",
       descrizione: "Dimora signorile di Don Rodrigo.",
       frasi: [
-        "Il palazzotto di Don Rodrigo dominava il borgo con aria minacciosa.",
-        "Don Rodrigo riceveva i suoi ospiti tra mura ricche e fredde."
+        "Il palazzotto di don Rodrigo sorgeva isolato, a somiglianza d’una bicocca, sulla cima d’uno de’ poggi ond’è sparsa e rilevata quella costiera.",
+        "il palazzotto di don Rodrigo, con la sua torre piatta [...] pareva un feroce che, ritto nelle tenebre, in mezzo a una compagnia d’addormentati, vegliasse, meditando un delitto."
       ],
       img: "icone/Palazzotto-Don-Rodrigo.jpg",
     },
@@ -142,8 +170,8 @@
       zona: "Lecco",
       descrizione: "Fortificazione risalente al XIII sec. che ispirò Manzoni per l'ambientazione della residenza dell'Innominato.",
       frasi: [
-        "Il castello dell'Innominato si ergeva in cima al monte.",
-        "La solitudine delle sue torri incuteva timore a chi vi si avvicinava."
+        "Il castello dell’innominato era a cavaliere a una valle angusta e uggiosa, sulla cima d'un poggio che sporge in fuori da un’aspra giogaia di monti, ed é, non si saprebbe dir bene, se congiunto ad essa o separatone, da un mucchio di massi e di dirupi",
+        "un andirivieni di corridoi bui, e per varie sale tappezzate di moschetti, di sciabole e di partigiane, e in ognuna delle quali c’era di guardia qualche bravo"
       ],
       img: "icone/Castello.jpg",
     },
@@ -152,8 +180,8 @@
       zona: "Lecco",
       descrizione: "Convento dei Cappuccini dove viveva il personaggio Fra Cristoforo e dove i protagonisti si recano per cercare aiuto. Oggi si possono trovare i resti dell'antico convento e la Chiesa dei Santi Materno e Lucia.",
       frasi: [
-        "Il convento di Pescarenico offriva riparo e pace ai viandanti.",
-        "Le mura del convento accoglievano chi cercava protezione."
+        "E Pescarenico una terricciola, sulla riva sinistra dell’Adda, o vogliam dire del lago, poco discosto dal ponte",
+        "Il convento era situato (e la fabbrica ne sussiste tuttavia) al di fuori, e in faccia all’entrata della terra, con di mezzo la strada che da Lecco conduce a Bergamo."
       ],
       img: "icone/Chiesa.jpg",
     },
@@ -162,8 +190,8 @@
     zona: "Lecco",
     descrizione: "Chiesa dei Santi Vitale e Valeria che ispirò quella in cui Don Abbondio officiava.",
     frasi: [
-      "Don Abbondio cercava conforto tra le mura della chiesa.",
-      "La chiesa era il luogo in cui il parroco meditava e pregava."
+      "l’ombra della chiesa, e pit in fuori l’ombra lunga ed acuta del campanile, si stendeva bruna e spiccata sul piano erboso e lucente della piazza",
+      "i due promessi andarono, con sicurezza trionfale, proprio a quella chiesa, dove, proprio per bocca di don Abbondio, furono sposi"
     ],
     img: "icone/chiesa-Olate.jpg",
   },
@@ -172,8 +200,8 @@
     zona: "Lecco",
     descrizione: "Punto di ritrovo dei bravi al servizio di Don Rodrigo.",
     frasi: [
-      "I bravi si radunavano davanti al tabernacolo per i loro piani.",
-      "Il tabernacolo era il simbolo del potere violento dei bravi."
+      "I muri interni delle due viottole, in vece di riunirsi ad angolo,terminavano in un tabernacolo, sul quale eran dipinte certe figure lunghe, serpeggianti, che finivano in punta...",
+      "Il curato, voltata la stradetta, e dirizzando, com’era solito, lo sguardo al tabernacolo, vide una cosa che non s’aspettava, e che non avrebbe voluto vedere."
     ],
     img: "icone/tabernacolo.jpg",
   },
@@ -182,8 +210,7 @@
     zona: "Lecco",
     descrizione: "Villa storica di Lecco legata alla famiglia Manzoni.",
     frasi: [
-      "La villa dei Manzoni si affacciava sul lago con eleganza.",
-      "La dimora conservava memorie di tempi passati."
+      "Quel ramo del lago di Como, che volge a mezzogiorno, tra due catene non interrotte di monti, tutto a seni e a golfi, a seconda dell'ondeggiamenti di quella costa..."
     ],
     img: "icone/Villamanzoni.jpg",
   },
@@ -192,8 +219,8 @@
     zona: "Lecco",
     descrizione: "Antico ponte che collega le sponde del lago di Lecco.",
     frasi: [
-      "Dal ponte Azzone Visconti si vedeva l'intero borgo.",
-      "Il ponte era testimone di molte vicende della città."
+      "e il ponte, che ivi congiunge le due rive, par che [...] segni il punto in cui il lago cessa, e l’Adda rincomincia",
+      "È a Pescate; costeggia quell’ultimo tratto dell’ Adda, dando però un’occhiata malinconica a Pescarenico; passa il ponte"
     ],
     img: "icone/ponte.jpg",
   },
@@ -202,8 +229,8 @@
     zona: "Lecco",
     descrizione: "Abitazione del sarto locale, amico dei protagonisti.",
     frasi: [
-      "La casa del sarto era accogliente e piena di vita.",
-      "Il sarto riceveva ospiti con gentilezza e discrezione."
+      "La buona donna, fatta seder Lucia nel miglior luogo della sua cucina, s’affaccendava a preparar qualcosa da ristorarla",
+      "Entra poi, con un passo più quieto, ma con una premura cordiale dipinta in viso, il padrone di casa. Era il sarto del villaggio"
     ],
     img: "icone/Casa_del_sarto.jpg",
   },
@@ -212,8 +239,8 @@
     zona: "Lecco",
     descrizione: "Montagna simbolica dei dintorni di Lecco.",
     frasi: [
-      "Il Resegone dominava la valle con la sua sagoma frastagliata.",
-      "La vista dal Resegone era mozzafiato e temuta dai viaggiatori."
+      "il Resegone, dai molti suoi cocuzzoli in fila, che in vero lo fanno somigliare a una sega",
+      "Ma dopo qualche momento, voltandosi indietro, vide all’orizzonte quella cresta frastagliata di montagne, vide distinto e alto tra quelle il suo Resegone, si senti tutto rimescolare il sangue"
     ],
     img: "icone/Resegone.jpg",
   },
@@ -222,8 +249,8 @@
     zona: "Milano",
     descrizione: "Struttura per la quarantena e l’isolamento dei malati.",
     frasi: [
-      "Il Lazzaretto era desolato e pieno di malati durante la peste.",
-      "Dentro le mura del Lazzaretto si viveva tra paura e speranza."
+      "Il lazzeretto di Milano [...] é un recinto quadrilatero e quasi quadrato, fuori della citta, a sinistra della porta detta orientale",
+      "Dormivano ammontati a venti a trenta per ognuna di quelle cellette, o accovacciati sotto iportici, sur un po’ di paglia putrida e fetente, o sulla nuda terra"
     ],
     img: "icone/Lazzaretto.jpg",
   },
@@ -232,8 +259,8 @@
     zona: "Milano",
     descrizione: "Panificio di Milano preso d'assalto dalla folla durante il tumulto di San Martino del 1628.",
     frasi: [
-      "Il forno delle Grucce era sempre pieno di odori invitanti.",
-      "Gli abitanti del quartiere frequentavano il forno ogni giorno."
+      "Mescolati poi con gli uni e con gli altri, c’eran coloro che avevan fatto disegno sopra un disordine più: co’ fiocchi. — Al forno! al forno! - si grida.",
+      "— Pane! pane! aprite! aprite! — eran le parole più distinte nell'urlìo orrendo, che la folla mandava in risposta."
     ],
     img: "icone/forno.jpg",
   },
@@ -242,8 +269,8 @@
     zona: "Milano",
     descrizione: "Casa di Alessandro Manzoni",
     frasi: [
-      "[L'amore di Renzo e Lucia è un amore che] non può trionfare se non lo si tutela, come un qualcosa di ‘sacro’, dalle difficoltà della vita",
-      "Questo matrimonio non s’ha da fare, né domani, né mai"
+      "Chi domandasse se non ci fu anche del dolore in distaccarsi dal paese nativo, da quelle montagne; ce ne fu sicuro [...] Ma, gia da qualche tempo, erano avvezzi tutt’e tre a riguardar come loro il paese dove andavano.",
+      "conclusero che i guai vengono bensì spesso, perché ci si é dato cagione; ma che la condotta più cauta e più innocente non basta a tenerli lontani; e che quando vengono, o per colpa o senza colpa, la fiducia in Dio li raddolcisce, e li rende utili per una vita migliore."
     ],
     img: "icone/casa-milano.jpg",
   },
@@ -252,8 +279,8 @@
     zona: "Milano",
     descrizione: "Antica porta fortificata della città di Milano.",
     frasi: [
-      "I bastioni di Porta Venezia proteggevano l’entrata della città.",
-      "I soldati pattugliavano i bastioni con grande attenzione."
+      "I bastioni scendevano in pendio irregolare, e il terreno era una superficie aspra e inuguale di rottami e di cocci buttati là a caso.",
+      "Renzo entra, passa; nessuno de’ gabellini gli bada: cosa che gli parve strana"
     ],
     img: "icone/Bastioni.jpg",
   },
@@ -262,8 +289,8 @@
     zona: "Monza",
     descrizione: "Il monastero di Santa Margherita, dove secondo il romanzo viveva la Monaca di Monza, venne distrutto nel 1944, la chiesa annessa prende il nome di Chiesa dei santi Margherita e Maurizio.",
     frasi: [
-      "Il convento della Monaca di Monza era austero e silenzioso.",
-      "Tra le mura del convento si consumavano vite tormentate."
+      "S’avviaron dunque con luia quel convento; il quale, come ognun sa, era pochi passi distante da Monza.",
+      "Attraversando un secondo cortile, diede qualche avvertimento alle donne, sul modo di portarsi con la signora. "
     ],
     img: "icone/monza-monaca.jpg",
   }
@@ -277,7 +304,7 @@ function renderItems(zonaFiltro = "") {
   const list = zonaFiltro ? luoghiManzoniani.filter(l => l.zona === zonaFiltro) : luoghiManzoniani;
 
   list.forEach(l => {
-    // trasformiamo le frasi in corsivo
+    // trasforma le frasi in corsivo
     const frasiHTML = l.frasi.map(f => `<li><em>${f}</em></li>`).join("");
     
     const cardHTML = `
