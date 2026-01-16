@@ -79,7 +79,7 @@ body {
 }
 
 .hero .quote {
-  font-size: italic;
+  font-style: italic;
   font-size: 1.1rem;
   color: #f5f4ef;
   text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.4);
@@ -477,4 +477,5 @@ footer a:hover i {
     background-color: rgba(0,0,0,0.1);
     font-weight: bold;
 }
+
 
