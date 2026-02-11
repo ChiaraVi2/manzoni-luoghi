@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Casa di Lucia (luogo narrativo)</title>
+
+        <respStmt>
+          <resp>enconding TEI</resp>
+          <name xml:id="CV">Chiara Virciglio</name>
+        </respStmt>
+      </titleStmt>
+
+      <publicationStmt>
+        <pubPlace>Bologna</pubPlace>
+        <date when="2026-01-27">27 gennaio 2026</date>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by-nc-sa/4.0/">
+            CC BY-NC-SA 4.0
+          </licence>
+        </availability>
+        <p>Progetto universitario per uso didattico</p> 
+      </publicationStmt>
+
+      <sourceDesc>
+        <bibl>
+          <title ref="https://www.wikidata.org/wiki/Q28491">I Promessi Sposi</title>
+          <author ref="https://viaf.org/viaf/14356/">Alessandro Manzoni</author>
+          <date when="1827">1827</date>
+        </bibl>
+      </sourceDesc>
+
+    </fileDesc>
+
+    <profileDesc>
+
+      <langUsage>
+        <language ident="it">Italiano</language>
+      </langUsage>
+
+      <!-- ambientazione narrativa-->
+      <settingDesc>
+        <setting>
+          <placeName ref="http://www.geonames.org/10627441">
+            Casa di Lucia, Olate (Lecco)
+          </placeName>
+          <date type="narrative" when="1628/1650">1628/1650</date>
+        </setting>
+      </settingDesc>
+
+      <particDesc>
+        <listPerson>
+
+          <person xml:id="lucia" type="fictional" ref="https://www.wikidata.org/wiki/Q3838466">
+            <persName>Lucia Mondella</persName>
+          </person>
+
+          <person xml:id="renzo" type="fictional" ref="https://www.wikidata.org/wiki/Q3933075">
+            <persName>Renzo Tramaglino</persName>
+          </person>
+
+          <person xml:id="agnese" type="fictional" ref="https://www.wikidata.org/wiki/Q3606643">
+            <persName>Agnese</persName>
+          </person>
+
+        </listPerson>
+      </particDesc>
+
+      <textClass>
+        <keywords>
+          <term>Luogo letterario</term>
+          <term>Vita domestica</term>
+          <term>Romanzo storico</term>
+        </keywords>
+      </textClass>
+
+    </profileDesc>
+
+    <encodingDesc>
+      <projectDesc>
+        <p>
+          File TEI che descrive semanticamente il <type ref="https://www.wikidata.org/wiki/Q105115142">luogo narrativo</type> "Casa di Lucia" come item del catalogo digitale del progetto "Manzoni e i luoghi manzoniani".
+        </p>
+      </projectDesc>
+      <editorialDecl>
+        <p>
+          Sono stati utilizzati identificativi esterni (VIAF, Wikidata, GeoNames) per il controllo di autorità di persone, opera e luoghi.
+        </p>
+      </editorialDecl>
+    </encodingDesc>
+
+  </teiHeader>
+
+  <text>
+    <body>
+      <div type="place" xml:id="casa_lucia">
+        <head>Casa di Lucia</head>
+        <p>
+          La presunta casa di <persName ref="#lucia">Lucia</persName> si trova nel quartiere Olate nella città di Lecco ed è identificata come l’abitazione della protagonista <persName ref="#lucia">Lucia Mondella</persName> all’inizio del romanzo <title ref="https://www.wikidata.org/wiki/Q28491">I Promessi Sposi</title>.
+        </p>
+
+        <listBibl>
+          <bibl type="source">
+            <title ref="https://www.wikidata.org/wiki/Q28491">I Promessi Sposi</title>,
+            <author ref="https://viaf.org/viaf/14356/">Alessandro Manzoni</author>
+            <date when="1827">1827</date>
+          </bibl>
+        </listBibl>
+
+      </div>
+
+    </body>
+  </text>
+
+</TEI>

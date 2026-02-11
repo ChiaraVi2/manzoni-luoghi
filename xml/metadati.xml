@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<progetto xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+  <metadataSito>
+    <dc:title>Manzoni e i luoghi manzoniani</dc:title>
+    <dc:creator>Chiara Virciglio</dc:creator>
+    <dc:subject>Letteratura italiana, luoghi letterari</dc:subject>
+    <dc:subject xsi:type="mp:viaf" mp:ref="https://viaf.org/viaf/14356/">Alessandro Manzoni</dc:subject>
+    <dc:subject xsi:type="dcterms:URI" dc:ref="https://www.wikidata.org/wiki/Q28491">I Promessi Sposi</dc:subject>
+    <dc:description>
+      Sito web realizzato come progetto di Digital Humanities dedicato ai luoghi manzoniani citati ne "I Promessi Sposi" di Alessandro Manzoni. 
+      Include biografia di Alessandro Manzoni, catalogo interattivo, mappa e percorsi letterari.
+    </dc:description>
+    <dc:publisher>Università degli Studi di Bologna</dc:publisher>
+    <dc:contributor>Chiara Virciglio</dc:contributor>
+    <dc:date>2026-01-15</dc:date>
+    <dc:type>Website</dc:type>
+    <dc:format>HTML5; CSS3; JavaScript; XML; TEI</dc:format>
+    <dc:identifier>https://chiaravirciglio.github.io</dc:identifier>
+    <dc:language>it</dc:language>
+    <dc:rights>Creative Commons BY-NC-SA 4.0</dc:rights>
+
+    <dc:coverage xsi:type="dcterms:URI" dc:ref="http://www.geonames.org/3174945">Lecco</dc:coverage>
+    <dc:coverage xsi:type="dcterms:URI" dc:ref="http://www.geonames.org/3173435">Milano</dc:coverage>
+    <dc:coverage xsi:type="dcterms:URI" dc:ref="http://www.geonames.org/6537122">Monza</dc:coverage>
+  </metadataSito>
+
+<!-- metadati catalogo -->
+  <catalogo>
+    <record>
+      <dc:title xsi:type="mp:wikidata" mp:ref="https://www.wikidata.org/wiki/Q24940457">Casa di Lucia</dc:title>
+      <dc:creator>Chiara Virciglio</dc:creator>
+      <dc:subject>Luogo letterario</dc:subject>
+      <dc:subject xsi:type="mp:wikidata" mp:ref="https://www.wikidata.org/wiki/Q3838466">Lucia Mondella</dc:subject>
+      <dc:subject xsi:type="mp:wikidata" mp:ref="https://www.wikidata.org/wiki/Q3606643">Agnese Mondella</dc:subject>
+      <dc:subject xsi:type="mp:wikidata" mp:ref="https://www.wikidata.org/wiki/Q3933075">Renzo Tramaglino</dc:subject>
+      <dc:subject xsi:type="mp:wikidata" mp:ref="https://www.wikidata.org/wiki/Q28491">I Promessi Sposi</dc:subject>
+      <dc:description>Abitazione tradizionalmente identificata come la casa di Lucia Mondella.</dc:description>
+      <dc:coverage xsi:type="dcterms:TGN" mp:ref="http://www.geonames.org/3174945">Lecco</dc:coverage>
+      <dc:type>Luogo</dc:type>
+      <dc:source>I Promessi Sposi, Alessandro Manzoni</dc:source>
+      <dc:language>it</dc:language>
+    </record>
+
+    <record>
+      <dc:title xsi:type="mp:wikidata" mp:ref="https://www.wikidata.org/wiki/Q24940507">Palazzotto di Don Rodrigo</dc:title>
+      <dc:creator>Chiara Virciglio</dc:creator>
+      <dc:subject>Luogo letterario</dc:subject>
+      <dc:subject xsi:type="mp:wikidata" mp:ref="https://www.wikidata.org/wiki/Q3713591">Don Rodrigo</dc:subject>
+      <dc:subject xsi:type="mp:wikidata" mp:ref="https://www.wikidata.org/wiki/Q28491">I Promessi Sposi</dc:subject>
+      <dc:description>Dimora signorile del personaggio di Don Rodrigo.</dc:description>
+      <dc:coverage xsi:type="dcterms:TGN" mp:ref="http://www.geonames.org/3174945">Lecco</dc:coverage>
+      <dc:type>Luogo</dc:type>
+      <dc:source>I Promessi Sposi, Alessandro Manzoni</dc:source>
+      <dc:language>it</dc:language>
+    </record>
+
+    <record>
+      <dc:title xsi:type="mp:wikidata" mp:ref="https://www.wikidata.org/wiki/Q16538019">Castello dell'Innominato</dc:title>
+      <dc:creator>Chiara Virciglio</dc:creator>
+      <dc:subject>Luogo letterario</dc:subject>
+      <dc:subject xsi:type="mp:wikidata" mp:ref="https://www.wikidata.org/wiki/Q3798988">Innominato</dc:subject>
+      <dc:subject xsi:type="mp:wikidata" mp:ref="https://www.wikidata.org/wiki/Q28491">I Promessi Sposi</dc:subject>
+      <dc:description>Residenza fortificata del personaggio dell'Innominato.</dc:description>
+      <dc:coverage xsi:type="dcterms:TGN" mp:ref="http://www.geonames.org/3174945">Lecco</dc:coverage>
+      <dc:type>Luogo</dc:type>
+      <dc:source>I Promessi Sposi, Alessandro Manzoni</dc:source>
+      <dc:language>it</dc:language>
+    </record>
+
+    <record>
+      <dc:title xsi:type="mp:wikidata" mp:ref="https://www.wikidata.org/wiki/Q28228952">Convento di Pescarenico</dc:title>
+      <dc:creator>Chiara Virciglio</dc:creator>
+      <dc:subject>Luogo letterario</dc:subject>
+      <dc:subject xsi:type="mp:wikidata" mp:ref="https://www.wikidata.org/wiki/Q3749188">Fra Cristoforo</dc:subject>
+      <dc:subject xsi:type="mp:wikidata" mp:ref="https://www.wikidata.org/wiki/Q28491">I Promessi Sposi</dc:subject>
+      <dc:description>Convento dei Cappuccini dove vive Fra Cristoforo.</dc:description>
+      <dc:coverage xsi:type="dcterms:TGN" mp:ref="http://www.geonames.org/3174945">Lecco</dc:coverage>
+      <dc:type>Luogo</dc:type>
+      <dc:source>I Promessi Sposi, Alessandro Manzoni</dc:source>
+      <dc:language>it</dc:language>
+    </record>
+
+    <record>
+      <dc:title xsi:type="mp:wikidata" mp:ref="https://www.wikidata.org/wiki/Q30889064">Chiesa di Don Abbondio</dc:title>
+      <dc:creator>Chiara Virciglio</dc:creator>
+      <dc:subject>Luogo letterario</dc:subject>
+      <dc:subject xsi:type="mp:wikidata" mp:ref="https://www.wikidata.org/wiki/Q3713482">Don Abbondio</dc:subject>
+      <dc:subject xsi:type="mp:wikidata" mp:ref="https://www.wikidata.org/wiki/Q28491">I Promessi Sposi</dc:subject>
+      <dc:description>Chiesa dove Don Abbondio officiava.</dc:description>
+      <dc:coverage xsi:type="dcterms:TGN" mp:ref="http://www.geonames.org/3174945">Lecco</dc:coverage>
+      <dc:type>Luogo</dc:type>
+      <dc:source>I Promessi Sposi, Alessandro Manzoni</dc:source>
+      <dc:language>it</dc:language>
+    </record>
+
+    <record>
+      <dc:title xsi:type="mp:wikidata" mp:ref="https://www.wikidata.org/wiki/Q134537805">Tabernacolo dei Bravi</dc:title>
+      <dc:creator>Chiara Virciglio</dc:creator>
+      <dc:subject>Luogo letterario</dc:subject>
+      <dc:subject xsi:type="mp:wikidata" mp:ref="https://www.wikidata.org/wiki/Q3643945">Bravi</dc:subject>
+      <dc:subject xsi:type="mp:wikidata" mp:ref="https://www.wikidata.org/wiki/Q28491">I Promessi Sposi</dc:subject>
+      <dc:description>Luogo dell'incontro tra Don Abbondio e i bravi.</dc:description>
+      <dc:coverage xsi:type="dcterms:TGN" mp:ref="http://www.geonames.org/3174945">Lecco</dc:coverage>
+      <dc:type>Luogo</dc:type>
+      <dc:source>I Promessi Sposi, Alessandro Manzoni</dc:source>
+      <dc:language>it</dc:language>
+    </record>
+
+    <record>
+      <dc:title xsi:type="mp:wikidata" mp:ref="https://www.wikidata.org/wiki/Q4012260">Villa Manzoni</dc:title>
+      <dc:creator>Chiara Virciglio</dc:creator>
+      <dc:subject>Luogo storico</dc:subject>
+      <dc:subject xsi:type="mp:viaf" mp:ref="https://viaf.org/viaf/14356/">Alessandro Manzoni</dc:subject>
+      <dc:description>Residenza storica della famiglia Manzoni a Lecco.</dc:description>
+      <dc:coverage xsi:type="dcterms:TGN" mp:ref="http://www.geonames.org/3174945">Lecco</dc:coverage>
+      <dc:type>Luogo</dc:type>
+      <dc:source>Biografia di Alessandro Manzoni</dc:source>
+      <dc:language>it</dc:language>
+    </record>
+
+    <record>
+      <dc:title xsi:type="mp:wikidata" mp:ref="https://www.wikidata.org/wiki/Q3907952">Ponte Azzone Visconti</dc:title>
+      <dc:creator>Chiara Virciglio</dc:creator>
+      <dc:subject>Luogo storico</dc:subject>
+      <dc:subject xsi:type="mp:wikidata" mp:ref="https://www.wikidata.org/wiki/Q28491">I Promessi Sposi</dc:subject>
+      <dc:description>Ponte storico sul fiume Adda nei pressi di Lecco.</dc:description>
+      <dc:coverage xsi:type="dcterms:TGN" mp:ref="http://www.geonames.org/3174945">Lecco</dc:coverage>
+      <dc:type>Luogo</dc:type>
+      <dc:source>I Promessi Sposi, Alessandro Manzoni</dc:source>
+      <dc:language>it</dc:language>
+    </record>
+
+    <record>
+      <dc:title xsi:type="mp:wikidata" mp:ref="https://www.wikidata.org/wiki/Q24940413">Casa del Sarto</dc:title>
+      <dc:creator>Chiara Virciglio</dc:creator>
+      <dc:subject>Luogo letterario</dc:subject>
+      <dc:subject xsi:type="mp:wikidata" mp:ref="https://www.wikidata.org/wiki/Q3950595">Sarto</dc:subject>
+      <dc:subject xsi:type="mp:wikidata" mp:ref="https://www.wikidata.org/wiki/Q28491">I Promessi Sposi</dc:subject>
+      <dc:description>Abitazione del sarto che aiuta Lucia.</dc:description>
+      <dc:coverage xsi:type="dcterms:TGN" mp:ref="http://www.geonames.org/3174945">Lecco</dc:coverage>
+      <dc:type>Luogo</dc:type>
+      <dc:source>I Promessi Sposi, Alessandro Manzoni</dc:source>
+      <dc:language>it</dc:language>
+    </record>
+
+    <record>
+      <dc:title xsi:type="mp:wikidata" mp:ref="https://www.wikidata.org/wiki/Q1231343">Monte Resegone</dc:title>
+      <dc:creator>Chiara Virciglio</dc:creator>
+      <dc:subject>Luogo naturale</dc:subject>
+      <dc:subject xsi:type="mp:wikidata" mp:ref="https://www.wikidata.org/wiki/Q28491">I Promessi Sposi</dc:subject>
+      <dc:description>Montagna simbolo del paesaggio manzoniano.</dc:description>
+      <dc:coverage xsi:type="dcterms:TGN" mp:ref="http://www.geonames.org/3174945">Lecco</dc:coverage>
+      <dc:type>Luogo</dc:type>
+      <dc:source>I Promessi Sposi, Alessandro Manzoni</dc:source>
+      <dc:language>it</dc:language>
+    </record>
+
+    <record>
+      <dc:title xsi:type="mp:wikidata" mp:ref="https://www.wikidata.org/wiki/Q3828234">Lazzaretto di Milano</dc:title>
+      <dc:creator>Chiara Virciglio</dc:creator>
+      <dc:subject>Luogo storico</dc:subject>
+      <dc:subject xsi:type="mp:wikidata" mp:ref="https://www.wikidata.org/wiki/Q3376282">Peste</dc:subject>
+      <dc:subject xsi:type="mp:wikidata" mp:ref="https://www.wikidata.org/wiki/Q28491">I Promessi Sposi</dc:subject>
+      <dc:description>Struttura sanitaria per la quarantena durante la peste.</dc:description>
+      <dc:coverage xsi:type="dcterms:TGN" mp:ref="http://www.geonames.org/3173435">Milano</dc:coverage>
+      <dc:type>Luogo</dc:type>
+      <dc:source>I Promessi Sposi, Alessandro Manzoni</dc:source>
+      <dc:language>it</dc:language>
+    </record>
+
+    <record>
+      <dc:title>Forno delle Grucce</dc:title>
+      <dc:creator>Chiara Virciglio</dc:creator>
+      <dc:subject>Luogo storico</dc:subject>
+      <dc:subject>Rivolta del pane</dc:subject>
+      <dc:subject xsi:type="mp:wikidata" mp:ref="https://www.wikidata.org/wiki/Q3933075">Renzo Tramaglino</dc:subject>
+      <dc:subject xsi:type="mp:wikidata" mp:ref="https://www.wikidata.org/wiki/Q28491">I Promessi Sposi</dc:subject>
+      <dc:description>Forno assaltato durante il tumulto di San Martino.</dc:description>
+      <dc:coverage xsi:type="dcterms:TGN" mp:ref="http://www.geonames.org/3173435">Milano</dc:coverage>
+      <dc:type>Luogo</dc:type>
+      <dc:source>I Promessi Sposi, Alessandro Manzoni</dc:source>
+      <dc:language>it</dc:language>
+    </record>
+
+    <record>
+      <dc:title xsi:type="mp:wikidata" mp:ref="https://www.wikidata.org/wiki/Q3661123">Casa dei Promessi Sposi</dc:title>
+      <dc:creator>Chiara Virciglio</dc:creator>
+      <dc:subject>Luogo storico</dc:subject>
+      <dc:subject xsi:type="mp:viaf" mp:ref="https://viaf.org/viaf/14356/">Alessandro Manzoni</dc:subject>
+      <dc:description>Casa milanese di Alessandro Manzoni.</dc:description>
+      <dc:coverage xsi:type="dcterms:TGN" mp:ref="http://www.geonames.org/3173435">Milano</dc:coverage>
+      <dc:type>Luogo</dc:type>
+      <dc:source>Biografia di Alessandro Manzoni</dc:source>
+      <dc:language>it</dc:language>
+    </record>
+
+    <record>
+      <dc:title xsi:type="mp:wikidata" mp:ref="https://www.wikidata.org/wiki/Q106734164">Bastioni di Porta Venezia</dc:title>
+      <dc:creator>Chiara Virciglio</dc:creator>
+      <dc:subject>Luogo storico</dc:subject>
+      <dc:subject xsi:type="mp:wikidata" mp:ref="https://www.wikidata.org/wiki/Q28491">I Promessi Sposi</dc:subject>
+      <dc:description>Area fortificata attraversata da Renzo entrando a Milano.</dc:description>
+      <dc:coverage xsi:type="dcterms:TGN" mp:ref="http://www.geonames.org/3173435">Milano</dc:coverage>
+      <dc:type>Luogo</dc:type>
+      <dc:source>I Promessi Sposi, Alessandro Manzoni</dc:source>
+      <dc:language>it</dc:language>
+    </record>
+
+    <record>
+      <dc:title>Convento della Monaca di Monza</dc:title>
+      <dc:creator>Chiara Virciglio</dc:creator>
+      <dc:subject>Luogo letterario</dc:subject>
+      <dc:subject xsi:type="mp:wikidata" mp:ref="https://www.wikidata.org/wiki/Q100294163">Gertrude</dc:subject>
+      <dc:subject xsi:type="mp:wikidata" mp:ref="https://www.wikidata.org/wiki/Q28491">I Promessi Sposi</dc:subject>
+      <dc:description>Monastero di Santa Margherita, ambientazione della vicenda della Monaca di Monza.</dc:description>
+      <dc:coverage xsi:type="dcterms:TGN" mp:ref="http://www.geonames.org/6537122">Monza</dc:coverage>
+      <dc:type>Luogo</dc:type>
+      <dc:source>I Promessi Sposi, Alessandro Manzoni</dc:source>
+      <dc:language>it</dc:language>
+    </record>
+
+  </catalogo>
+
+</progetto>

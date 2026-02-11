@@ -49,24 +49,29 @@
       <!-- Registro strutturato dei luoghi (listPlace) -->
       <listPlace>
 
+        <place xml:id="place-lecco">
+          <placeName>Lecco</placeName>
+          <settlement ref="https://www.geonames.org/3174945">3174945</settlement>
+        </place>
+
         <place xml:id="place-casa-lucia">
           <placeName>Casa di Lucia</placeName>
-          <settlement>Lecco</settlement>
+          <settlement ref="https://www.geonames.org/10627441">10627441</settlement>
         </place>
 
         <place xml:id="place-palazzotto-don-rodrigo">
           <placeName>Palazzotto di Don Rodrigo</placeName>
-          <settlement>Lecco</settlement>
+          <settlement ref="https://www.geonames.org/10627442">10627442</settlement>
         </place>
 
         <place xml:id="place-castello-innominato">
           <placeName>Castello dell'Innominato</placeName>
-          <settlement>Lecco</settlement>
+          <settlement ref="https://www.geonames.org/10627451">10627451</settlement>
         </place>
 
         <place xml:id="place-convento-pescarenico">
           <placeName>Convento di Pescarenico</placeName>
-          <settlement>Lecco</settlement>
+          <settlement ref="https://www.geonames.org/13561023">13561023</settlement>
         </place>
 
         <place xml:id="place-chiesa-don-abbondio">
@@ -81,12 +86,12 @@
 
         <place xml:id="place-villa-manzoni">
           <placeName>Villa Manzoni</placeName>
-          <settlement>Lecco</settlement>
+          <settlement ref="https://www.geonames.org/10627426">10627426</settlement>
         </place>
 
         <place xml:id="place-ponte-azzone-visconti">
           <placeName>Ponte Azzone Visconti</placeName>
-          <settlement>Lecco</settlement>
+          <settlement ref="https://www.geonames.org/8952397">8952397</settlement>
         </place>
 
         <place xml:id="place-casa-sarto">
@@ -96,7 +101,12 @@
 
         <place xml:id="place-monte-resegone">
           <placeName>Monte Resegone</placeName>
-          <settlement>Lecco</settlement>
+          <settlement ref="https://www.geonames.org/6697988">6697988</settlement>
+        </place>
+
+        <place xml:id="place-milano">
+          <placeName>Milano</placeName>
+          <settlement ref="https://www.geonames.org/3173435">3173435</settlement>
         </place>
 
         <place xml:id="place-lazzaretto-milano">
@@ -111,12 +121,17 @@
 
         <place xml:id="place-casa-promessi-sposi">
           <placeName>Casa dei Promessi Sposi</placeName>
-          <settlement>Milano</settlement>
+          <settlement ref="https://www.geonames.org/10278744">10278744</settlement>
         </place>
 
         <place xml:id="place-bastioni-porta-venezia">
           <placeName>Bastioni di Porta Venezia</placeName>
-          <settlement>Milano</settlement>
+          <settlement ref="https://www.geonames.org/12022870">12022870</settlement>
+        </place>
+
+        <place xml:id="place-monza">
+          <placeName>Monza</placeName>
+          <settlement ref="https://www.geonames.org/6537122">6537122</settlement>
         </place>
 
         <place xml:id="place-convento-monaca-monza">
@@ -125,6 +140,67 @@
         </place>
 
       </listPlace>
+
+      <!-- Registro strutturato delle persone (listPerson) -->
+      <listPerson>
+
+        <person xml:id="pers-manzoni">
+          <persName>Alessandro Manzoni</persName>
+          <idno type="VIAF">http://viaf.org/viaf/14356</idno>
+          <idno type="Wikidata">https://www.wikidata.org/entity/Q1064</idno>
+        </person>
+
+        <person xml:id="pers-lucia" type="fictional">
+          <persName>Lucia Mondella</persName>
+          <idno type="Wikidata">https://www.wikidata.org/entity/Q3838466</idno>
+        </person>
+
+        <person xml:id="pers-renzo" type="fictional">
+          <persName>Renzo Tramaglino</persName>
+          <idno type="Wikidata">https://www.wikidata.org/entity/Q3933075</idno>
+        </person>
+
+        <person xml:id="pers-agnese" type="fictional">
+          <persName>Agnese</persName>
+          <idno type="Wikidata">https://www.wikidata.org/entity/Q3606643</idno>
+        </person>
+
+        <person xml:id="pers-don-rodrigo" type="fictional">
+          <persName>Don Rodrigo</persName>
+          <idno type="Wikidata">https://www.wikidata.org/entity/Q3713591</idno>
+        </person>
+
+        <person xml:id="pers-innominato" type="fictional">
+          <persName>Innominato</persName>
+          <idno type="Wikidata">https://www.wikidata.org/entity/Q3798988</idno>
+        </person>
+
+        <person xml:id="pers-fra-cristoforo" type="fictional">
+          <persName>Fra Cristoforo</persName>
+          <idno type="Wikidata">https://www.wikidata.org/entity/Q3749188</idno>
+        </person>
+
+        <person xml:id="pers-don-abbondio" type="fictional">
+          <persName>Don Abbondio</persName>
+          <idno type="Wikidata">https://www.wikidata.org/entity/Q3713482</idno>
+        </person>
+
+        <person xml:id="pers-bravi" type="fictional">
+          <persName>Bravi</persName>
+          <idno type="Wikidata">https://www.wikidata.org/entity/Q3643945</idno>
+        </person>
+
+        <person xml:id="pers-sarto" type="fictional">
+          <persName>Sarto</persName>
+          <idno type="Wikidata">https://www.wikidata.org/entity/Q3950595</idno>
+        </person>
+
+        <person xml:id="pers-monaca-monza" type="fictional">
+          <persName>Monaca di Monza</persName>
+          <idno type="Wikidata">https://www.wikidata.org/entity/Q100294163</idno>
+        </person>
+
+      </listPerson>
 
 
       <div type="catalogo" xml:id="catalogo-luoghi">
@@ -138,43 +214,45 @@
 
           <!--descrizione-->
           <p>
-            La <placeName>Casa di Lucia</placeName> è tradizionalmente identificata come l’abitazione di
-            <persName>Lucia Mondella</persName>,protagonista del romanzo, simbolo di uno spazio domestico umile e protetto.
+            La <placeName ref="#place-casa-lucia">Casa di Lucia</placeName> è tradizionalmente identificata come l’abitazione di
+            <persName ref="#pers-lucia">Lucia Mondella</persName>, protagonista del romanzo, simbolo di uno spazio domestico umile e protetto.
           </p>
 
-          <figure>
+          <figure corresp="#place-casa-lucia">
             <graphic url="icone/casa_di_Lucia.jpg"/>
             <figDesc>
-              Fotografia che mostra la presunta Casa di Lucia, situata nel rione di Olate, in via Caldone 19 a Lecco, di cui si può vedere solo il portone di legno e il muro che delimita l'area.
+              Fotografia che mostra la presunta <placeName ref="#place-casa-lucia">Casa di Lucia</placeName>, situata nel rione di Olate, in via Caldone 19 a <placeName ref="#place-lecco">Lecco</placeName>, di cui si può vedere solo il portone di legno e il muro che delimita l'area.
             </figDesc>
             <note type="source">
-              Fonte dell'immagine: Wikimedia Commons
+              <ref target="https://commons.wikimedia.org/wiki/File:Portone_della_presunta_casa_di_Lucia.jpg">
+                Fonte dell'immagine: Wikimedia Commons
+              </ref>
             </note>
           </figure>
 
-          <cit>
+          <cit xml:id="cit-casa-lucia-1" corresp="#place-casa-lucia">
             <quote>Aveva quella casetta un piccolo cortile dinanzi, che la separava dalla strada, ed era cinto da un murettino.</quote>
           </cit>
 
           <!--commenti-->
-          <note type="interpretation">
-            La descrizione della casa di Lucia, attraverso l'utilizzo di questo determinato vocabolario, mette in evidenza uno spazio umile, raccolto e protetto. Inoltre, sottolineando la presenza di un "murettino", la frase suggerisce un luogo di intimità domestica e tranquillità. 
+          <note type="interpretation" corresp="#cit-casa-lucia-1">
+            La descrizione della <placeName ref="#place-casa-lucia">casa di Lucia</placeName>, attraverso l'utilizzo di questo determinato vocabolario, mette in evidenza uno spazio umile, raccolto e protetto. Inoltre, sottolineando la presenza di un "murettino", la frase suggerisce un luogo di intimità domestica e tranquillità. 
           </note>
 
-          <cit>
+          <cit xml:id="cit-casa-lucia-2" corresp="#place-casa-lucia">
             <quote>Passarono anche, pian piano, davanti alla nostra povera casetta: la più quieta di tutte, giacchè non c'era più nessuno.</quote>
           </cit>
 
-          <note type="interpretation">
-            Questa frase cambia il significato che viene dato fino a questo punto alla casa di Lucia. Lo spazio domestico diventa luogo di assenza e perdita, poiché il silenzio è conseguenza del forzato sradicamento di Lucia, mentre la "povera casetta" assume un valore emotivo che rappresenta la frattura della vita quotidiana.
+          <note type="interpretation" corresp="#cit-casa-lucia-2">
+            Questa frase cambia il significato che viene dato fino a questo punto alla <placeName ref="#place-casa-lucia">casa di Lucia</placeName>. Lo spazio domestico diventa luogo di assenza e perdita, poiché il silenzio è conseguenza del forzato sradicamento di <persName ref="#pers-lucia">Lucia</persName>, mentre la "povera casetta" assume un valore emotivo che rappresenta la frattura della vita quotidiana.
           </note>
 
-          <note type="commentary">
-            La casa tradizionalmente identificata come “Casa di Lucia” si trova nel quartiere di Olate, a Lecco, in via Caldone. L’attribuzione non è documentaria ma deriva dalla tradizione ottocentesca e dalla toponomastica locale. L’edificio attuale è stato restrutturato diverse volte, ma conserva la tipologia delle abitazioni rurali lombarde del XVII secolo, con cortile anteriore e muro perimetrale.
+          <note type="commentary" corresp="#place-casa-lucia">
+            La casa tradizionalmente identificata come <placeName ref="#place-casa-lucia">“Casa di Lucia”</placeName> si trova nel quartiere di Olate, a <placeName ref="#place-lecco">Lecco</placeName>, in via Caldone. L’attribuzione non è documentaria ma deriva dalla tradizione ottocentesca e dalla toponomastica locale. L’edificio attuale è stato restrutturato diverse volte, ma conserva la tipologia delle abitazioni rurali lombarde del XVII secolo, con cortile anteriore e muro perimetrale.
           </note>
 
           <bibl>
-            <author>Alessandro Manzoni</author>,
+            <author ref="#pers-manzoni">Alessandro Manzoni</author>,
             <title>I Promessi Sposi</title>,
             <edition>Universale economica Feltrinelli/classici, 2020</edition>,
             <ref>Cap. II e VIII</ref>
@@ -188,41 +266,43 @@
           </head>
 
           <p>
-            Il <placeName>Palazzotto di Don Rodrigo</placeName> simboleggia il potere e l’arbitrio del signorotto locale.
+            Il <placeName ref="#place-palazzotto-don-rodrigo">Palazzotto di Don Rodrigo</placeName> simboleggia il potere e l’arbitrio del signorotto locale.
           </p>
 
-          <figure>
+          <figure corresp="#place-palazzotto-don-rodrigo">
             <graphic url="icone/Palazzotto-Don-Rodrigo.jpg"/>
             <figDesc>
-              Fotografia che mostra l'edificio identificato come palazzotto di Don Rodrigo, situato a Lecco sul promontorio dello Zucco. L'immagine mostra l'attuale Villa Guzzi poichè il palazzo originale, edificato alla fine del XVI sec dalla famiglia Arrigoni, fu abbattuto nel 1937.
+              Fotografia che mostra l'edificio identificato come <placeName ref="#place-palazzotto-don-rodrigo">palazzotto di Don Rodrigo</placeName>, situato a <placeName ref="#place-lecco">Lecco</placeName> sul promontorio dello Zucco. L'immagine mostra l'attuale Villa Guzzi poichè il palazzo originale, edificato alla fine del XVI sec. dalla famiglia Arrigoni, fu abbattuto nel 1937.
             </figDesc>
             <note type="source">
-              Fonte dell'immagine: https://leccotourism.it/palazzotto-di-don-rodrigo/
+              <ref target="https://leccotourism.it/palazzotto-di-don-rodrigo/">
+                Fonte dell'immagine: Lecco Tourism
+              </ref>
             </note>
           </figure>
 
-          <cit>
+          <cit xml:id="cit-palazzotto-don-rodrigo-1" corresp="#place-palazzotto-don-rodrigo">
             <quote>Il palazzotto di don Rodrigo sorgeva isolato, a somiglianza d’una bicocca, sulla cima d’uno de’ poggi ond’è sparsa e rilevata quella costiera.</quote>
           </cit>
 
-          <note type="interpretation">
+          <note type="interpretation" corresp="#cit-palazzotto-don-rodrigo-1">
             Il palazzotto è descritto come isolato e sopraelevato, collocato sulla cima di un poggio e separato dalle altre abitazioni. La posizione dominante caratterizza il palazzotto come luogo di potere e controllo territoriale, sottolineandone allo stesso tempo il distacco dal resto della comunità. Inoltre, il paragone con una "bicocca" ne sottolinea la funzione pratica di difesa e imposizione di autorità. Lo spazio riflette il ruolo sociale del personaggio che lo abita, fondato sulla potenza/prepotenza e l'isolamento.
           </note>
 
-          <cit>
+          <cit xml:id="cit-palazzotto-don-rodrigo-2" corresp="#place-palazzotto-don-rodrigo">
             <quote>il palazzotto di don Rodrigo, con la sua torre piatta [...] pareva un feroce che, ritto nelle tenebre, in mezzo a una compagnia d’addormentati, vegliasse, meditando un delitto.</quote>
           </cit>
 
-          <note type="interpretation">
-            In questa descrizione il palazzotto viene paragonato a un "feroce" che veglia nel buio mentre gli altri dormono. In questo modo l'edificio diventa una proiezione architettonica della violenza e della minaccia rappresentate da don Rodrigo.
+          <note type="interpretation" corresp="#cit-palazzotto-don-rodrigo-2">
+            In questa descrizione il palazzotto viene paragonato a un "feroce" che veglia nel buio mentre gli altri dormono. In questo modo l'edificio diventa una proiezione architettonica della violenza e della minaccia rappresentate da <persName ref="#pers-don-rodrigo">don Rodrigo</persName>.
           </note>
 
-          <note type="commentary">
-            Il palazzotto è tradizionalmente localizzato sul promontorio dello Zucco, sopra Lecco. L’edificio storico era stato costruito alla fine del XVI secolo  appartneva alla famiglia Arrigoni; venne demolito nel 1937. L’attuale Villa Guzzi che occupa l’area non coincide con la struttura originaria descritta da Manzoni.
+          <note type="commentary" corresp="#place-palazzotto-don-rodrigo">
+            Il palazzotto è tradizionalmente localizzato sul promontorio dello Zucco, sopra <placeName ref="#place-lecco">Lecco</placeName>. L’edificio storico era stato costruito alla fine del XVI secolo  apparteneva alla famiglia Arrigoni; venne demolito nel 1937. L’attuale Villa Guzzi che occupa l’area non coincide con la struttura originaria descritta da <persName ref="#pers-manzoni">Manzoni</persName>.
           </note>
 
           <bibl>
-            <author>Alessandro Manzoni</author>,
+            <author ref="#pers-manzoni">Alessandro Manzoni</author>,
             <title>I Promessi Sposi</title>,
             <edition>Universale economica Feltrinelli/classici, 2020</edition>,
             <ref>Cap. V e VIII</ref>
@@ -236,41 +316,43 @@
           </head>
 
           <p>
-            Il <placeName>Castello dell'Innominato</placeName> è una fortificazione risalente al XIII sec. che ispirò Manzoni per l'ambientazione della residenza dell'Innominato. 
+            Il <placeName ref="#place-castello-innominato">Castello dell'Innominato</placeName> è una fortificazione risalente al XIII sec. che ispirò <persName ref="#pers-manzoni">Manzoni</persName> per l'ambientazione della residenza dell'<persName ref="#pers-innominato">Innominato</persName>. 
           </p>
 
-          <figure>
+          <figure corresp="#place-castello-innominato">
             <graphic url="icone/Castello.jpg"/>
             <figDesc>
               Fotografia scattata da Vercurago che mostra la fortificazione costruita nel XIII sec su una rocca del Monte Magnodeno chiamata Tremasasso, di cui sono visibili solo i resti.
             </figDesc>
             <note type="source">
-              Fonte dell'immagine: Wikimedia Commons
+              <ref target="https://commons.wikimedia.org/wiki/File:Castello_dell%27Innominato_DB.jpg">
+                Fonte dell'immagine: Wikimedia Commons
+              </ref>
             </note>
           </figure>
 
-          <cit>
+          <cit xml:id="cit-castello-innominato-1" corresp="#place-castello-innominato">
             <quote>Il castello dell’innominato era a cavaliere a una valle angusta e uggiosa, sulla cima d'un poggio che sporge in fuori da un’aspra giogaia di monti, ed é, non si saprebbe dir bene, se congiunto ad essa o separatone, da un mucchio di massi e di dirupi</quote>
           </cit>
 
-          <note type="interpretation">
-           La collocazione del castello è indicata come estrema e inaccessibile: domina una valle "angusta e uggiosa" ed è posto su uno sperone roccioso difficile da raggiungere ed espugnare, simbolo di un potere assoluto. Questo spazio architettonico traduce la figura dell'Innominato: isolato dal mondo civile, oltre le regole, potente ma anche prigioniero della propria solitudine.  
+          <note type="interpretation" corresp="#cit-castello-innominato-1">
+           La collocazione del castello è indicata come estrema e inaccessibile: domina una valle "angusta e uggiosa" ed è posto su uno sperone roccioso difficile da raggiungere ed espugnare, simbolo di un potere assoluto. Questo spazio architettonico traduce la figura dell'<persName ref="#pers-innominato">Innominato</persName>: isolato dal mondo civile, oltre le regole, potente ma anche prigioniero della propria solitudine.  
           </note>
 
-          <cit>
+          <cit xml:id="cit-castello-innominato-2" corresp="#place-castello-innominato">
             <quote>un andirivieni di corridoi bui, e per varie sale tappezzate di moschetti, di sciabole e di partigiane, e in ognuna delle quali c’era di guardia qualche bravo</quote>
           </cit>
 
-          <note type="interpretation">
+          <note type="interpretation" corresp="#cit-castello-innominato-2">
             L'interno del castello viene descritto come un labirinto di corridoi bui e sale armate presidiate da bravi. L'oscurità, la ripetizione degli spazi e la presenza di armi e guardie fa sì che l'edificio sia organizzato per intimidire e dominare.
           </note>
 
-          <note type="commentary">
-            Il castello ll'Innominato è generalmente identificato con i resti della fortificazione medievale del Tremasasso, sul monte Magnodeno, presso Vercurago. Costruito tra XII e XIII secolo, controllava le vie di comunicazione tra il lago e la pianura. Oggi ne restano solo ruderi.
+          <note type="commentary" corresp="#place-castello-innominato">
+            Il <placeName ref="#place-castello-innominato">castello dell'Innominato</placeName> è generalmente identificato con i resti della fortificazione medievale del Tremasasso, sul monte Magnodeno, presso Vercurago. Costruito tra XII e XIII secolo, controllava le vie di comunicazione tra il lago e la pianura. Oggi ne restano solo ruderi.
           </note>
 
           <bibl>
-            <author>Alessandro Manzoni</author>,
+            <author ref="#pers-manzoni">Alessandro Manzoni</author>,
             <title>I Promessi Sposi</title>,
             <edition>Universale economica Feltrinelli/classici, 2020</edition>,
             <ref>Cap. XX</ref>
@@ -284,39 +366,42 @@
           </head>
 
           <p>
-            Il <placeName>Convento di Pescarenico</placeName> è il luogo in cui vive <persName>Fra Cristoforo</persName> e rappresenta uno spazio di protezione e rifugio.
+            Il <placeName ref="#place-convento-pescarenico">Convento di Pescarenico</placeName> è il luogo in cui vive <persName ref="#pers-fra-cristoforo">Fra Cristoforo</persName> e rappresenta uno spazio di protezione e rifugio.
           </p>
 
-          <figure>
+          <figure corresp="#place-convento-pescarenico">
             <graphic url="icone/Chiesa.jpg"/>
-            <figDesc>Fotografia della Chiesa dei Santi Materno e Lucia nel quartiere di Pescarenico a Lecco, dove oggi si possono trovare i resti dell'antico Convento dei Cappuccini dove viveva il personaggio di Fra Cristoro.</figDesc>
+            <figDesc>Fotografia della Chiesa dei Santi Materno e Lucia nel quartiere di Pescarenico a <placeName ref="#place-lecco">Lecco</placeName>, dove oggi si possono trovare i resti dell'antico Convento dei Cappuccini dove viveva il personaggio di <persName ref="#pers-fra-cristoforo">Fra Cristoforo</persName>.
+            </figDesc>
             <note type="source">
-              Fonte dell'immagine: Wikimedia Commons
+              <ref target="https://commons.wikimedia.org/wiki/File:Chiesa_Santi_Materno_e_Lucia.JPG">
+                Fonte dell'immagine: Wikimedia Commons
+              </ref>
             </note>
           </figure>
 
-          <cit>
+          <cit xml:id="cit-convento-pescarenico-1" corresp="#place-convento-pescarenico">
             <quote>E Pescarenico una terricciola, sulla riva sinistra dell’Adda, o vogliam dire del lago, poco discosto dal ponte</quote>
           </cit>
 
-          <note type="interpretation">
+          <note type="interpretation" corresp="#cit-convento-pescarenico-1">
             La descrizione di Pescarenico come "terricciola" sottolinea il carattere modesto e periferico del contesto in cui sorge il convento. Inoltre la vicinanza all'acqua e al ponte lo colloca in un punto di passaggio naturale e umano. È uno spazio che non comunica minaccia o potere, ma stabilità e accoglienza, ponendosi come alternativa etica agli spazi della violenza e come possibile rifugio.
           </note>
 
-          <cit>
+          <cit xml:id="cit-convento-pescarenico-2" corresp="#place-convento-pescarenico">
             <quote>Il convento era situato (e la fabbrica ne sussiste tuttavia) al di fuori, e in faccia all’entrata della terra, con di mezzo la strada che da Lecco conduce a Bergamo.</quote>
           </cit>
 
-          <note type="interpretation">
-            Il convento è collocato di fronte all'ingresso del paese e una strada di passaggio importante, quella che collega Lecco a Bergamo. Questa posizione lo caratterizza come uno spazio di confine e accoglienza, coerente con la funzione dei cappuccini di assistenza, mediazione e protezione dei deboli.
+          <note type="interpretation" corresp="#cit-convento-pescarenico-2">
+            Il convento è collocato di fronte all'ingresso del paese e una strada di passaggio importante, quella che collega <placeName ref="#place-lecco">Lecco</placeName> a Bergamo. Questa posizione lo caratterizza come uno spazio di confine e accoglienza, coerente con la funzione dei cappuccini di assistenza, mediazione e protezione dei deboli.
           </note>
 
-          <note type="commentary">
+          <note type="commentary" corresp="#place-convento-pescarenico">
             Il convento dei Cappuccini di Pescarenico fu fondato nel 1576 e nel 1810 venne soppresso. Parte delle strutture originarie sono state inglobate nell’attuale complesso della chiesa dei Santi Materno e Lucia.
           </note>
 
           <bibl>
-            <author>Alessandro Manzoni</author>,
+            <author ref="#pers-manzoni">Alessandro Manzoni</author>,
             <title>I Promessi Sposi</title>,
             <edition>Universale economica Feltrinelli/classici, 2020</edition>,
             <ref>Cap. IV</ref>
@@ -330,39 +415,41 @@
           </head>
 
           <p>
-            La <placeName>chiesa di Don Abbondio</placeName> è uno dei luoghi simbolici dell’inizio e della conclusione della vicenda dei due promessi sposi.
+            La <placeName ref="#place-chiesa-don-abbondio">chiesa di Don Abbondio</placeName> è uno dei luoghi simbolici dell’inizio e della conclusione della vicenda dei due promessi sposi.
           </p>
 
-          <figure>
+          <figure corresp="#place-chiesa-don-abbondio">
             <graphic url="icone/chiesa-Olate.jpg"/>
-            <figDesc>Fotografia della Chiesa dei Santi Vitale e Valeria, nel quartiere di Olate a Lecco, che ispirò quella in cui Don Abbondio officiava. è una chiesa con elementi architettonici e stilistici differenti causati dalla demolizioni e ricostruzione della facciata nel XVI secolo.</figDesc>
+            <figDesc>Fotografia della Chiesa dei Santi Vitale e Valeria, nel quartiere di Olate a <placeName ref="#place-lecco">Lecco</placeName>, che ispirò quella in cui <persName ref="#pers-don-abbondio">Don Abbondio</persName> officiava. è una chiesa con elementi architettonici e stilistici differenti causati dalla demolizioni e ricostruzione della facciata nel XVI secolo.</figDesc>
             <note type="source">
-              Fonte dell'immagine: Wikimedia Commons
+              <ref target="https://commons.wikimedia.org/wiki/File:SantiVitaleValeriaOlate.jpg">
+                Fonte dell'immagine: Wikimedia Commons
+              </ref>
             </note>
           </figure>
 
-          <cit>
+          <cit xml:id="cit-chiesa-don-abbondio-1" corresp="#place-chiesa-don-abbondio">
             <quote>l’ombra della chiesa, e più in fuori l’ombra lunga ed acuta del campanile, si stendeva bruna e spiccata sul piano erboso e lucente della piazza</quote>
           </cit>
 
-          <note type="interpretation">
+          <note type="interpretation" corresp="#cit-chiesa-don-abbondio-1">
             L’ombra della chiesa e del campanile che si proietta sulla piazza mette in evidenza la centralità visiva dell’edificio nello spazio del paese.
           </note>
 
-          <cit>
+          <cit xml:id="cit-chiesa-don-abbondio-2" corresp="#place-chiesa-don-abbondio">
             <quote>i due promessi andarono, con sicurezza trionfale, proprio a quella chiesa, dove, proprio per bocca di don Abbondio, furono sposi</quote>
           </cit>
 
-          <note type="interpretation">
+          <note type="interpretation" corresp="#cit-chiesa-don-abbondio-2">
             Nel finale del romanzo la chiesa diventa luogo di ricomposizione dell’ordine. Lo spazio sacro assume il valore di chiusura positiva della vicenda, trasformandosi da luogo di fallimento iniziale a sede della giustizia ristabilita.
           </note>
 
-          <note type="commentary">
-            La chiesa è identificata con la parrocchiale dei Santi Vitale e Valeria nel rione di Olate, edificio di origini medievali che subì importanti trasformazioni nel XVI secolo, in particolare nella facciata e nel campanile; infatti, se la facciata in precedenza si rivolgeva verso il rione di Acquate, nel 1427 venne distrutta e ricostruita orientandola verso il centro di Lecco.
+          <note type="commentary" corresp="#place-chiesa-don-abbondio">
+            La chiesa è identificata con la parrocchiale dei Santi Vitale e Valeria nel rione di Olate, edificio di origini medievali che subì importanti trasformazioni nel XVI secolo, in particolare nella facciata e nel campanile; infatti, se la facciata in precedenza si rivolgeva verso il rione di Acquate, nel 1427 venne distrutta e ricostruita orientandola verso il centro di <placeName ref="#place-lecco">Lecco</placeName>.
           </note>
 
           <bibl>
-            <author>Alessandro Manzoni</author>,
+            <author ref="#pers-manzoni">Alessandro Manzoni</author>,
             <title>I Promessi Sposi</title>,
             <edition>Universale economica Feltrinelli/classici, 2020</edition>,
             <ref>Cap. VIII e XXXVIII</ref>
@@ -376,39 +463,41 @@
           </head>
 
           <p>
-            Il <placeName>tabernacolo dei bravi</placeName> è il luogo dell’incontro tra Don Abbondio e i due emissari di don Rodrigo che dà avvio a tutta la storia.
+            Il <placeName ref="#place-tabernacolo-bravi">tabernacolo dei bravi</placeName> è il luogo dell’incontro tra <persName ref="#pers-don-abbondio">Don Abbondio</persName> e i due emissari di <persName ref="#pers-don-rodrigo">don Rodrigo</persName> che dà avvio a tutta la storia.
           </p>
 
-          <figure>
+          <figure corresp="#place-tabernacolo-bravi">
             <graphic url="icone/tabernacolo.jpg"/>
             <figDesc>La fotografia mostra una strada pedonale dove oggi, appesa sul muro a destra, è posta la targa con una citazione tratta dal romanzo.</figDesc>
             <note type="source">
-              Fonte dell'immagine: Wikimedia Commons
+              <ref target="https://www.eccolecco.it/i-promessi-sposi/luoghi-manzoniani/tabernacolo-bravi/">
+                Fonte dell'immagine: Ecco Lecco
+              </ref>
             </note>
           </figure>
 
-          <cit>
+          <cit xml:id="cit-tabernacolo-bravi-1" corresp="#place-tabernacolo-bravi">
             <quote>I muri interni delle due viottole, in vece di riunirsi ad angolo,terminavano in un tabernacolo, sul quale eran dipinte certe figure lunghe, serpeggianti, che finivano in punta...</quote>
           </cit>
 
-          <note type="interpretation">
-            La descrizione del tabernacolo come punto di convergenza di due viottoli lo trasforma in uno spazio simbolico di arresto. Si tratta di contesto angusto che anticipa la profanazione morale che avverrà con l’incontro violento tra Don Abbondio e i bravi.
+          <note type="interpretation" corresp="#cit-tabernacolo-bravi-1">
+            La descrizione del <placeName ref="#place-tabernacolo-bravi">tabernacolo</placeName> come punto di convergenza di due viottoli lo trasforma in uno spazio simbolico di arresto. Si tratta di contesto angusto che anticipa la profanazione morale che avverrà con l’incontro violento tra <persName ref="#pers-don-abbondio">Don Abbondio</persName> e i <persName ref="#pers-bravi">bravi</persName>.
           </note>
 
-          <cit>
+          <cit xml:id="cit-tabernacolo-bravi-2" corresp="#place-tabernacolo-bravi">
             <quote>Il curato, voltata la stradetta, e dirizzando, com’era solito, lo sguardo al tabernacolo, vide una cosa che non s’aspettava, e che non avrebbe voluto vedere.</quote>
           </cit>
 
-          <note type="interpretation">
-            Da questa frase di capisce che il tabernacolo è un punto visivo verso cui Don Abbondio dirige abitualmente lo sguardo. Proprio questa abitudine rende l’apparizione dei bravi ancora più traumatica: lo spazio "familiare" si trasforma in luogo di minaccia, segnando l’irruzione della violenza nella normalità del paese.
+          <note type="interpretation" corresp="#cit-tabernacolo-bravi-2">
+            Da questa frase di capisce che il <placeName ref="#place-tabernacolo-bravi">tabernacolo</placeName> è un punto visivo verso cui <persName ref="#pers-don-abbondio">Don Abbondio</persName> dirige abitualmente lo sguardo. Proprio questa abitudine rende l’apparizione dei bravi ancora più traumatica: lo spazio "familiare" si trasforma in luogo di minaccia, segnando l’irruzione della violenza nella normalità del paese.
           </note>
 
-          <note type="commentary">
-            Il tabernacolo si trova lungo l’antico percorso tra Olate e Acquate. L’edicola votiva attuale è una ricostruzione moderna che ricorda il luogo tradizionalmente associato all’incontro tra Don Abbondio e i bravi e dove ad oggi si trova una targa che riporta un passo del romanzo.
+          <note type="commentary" corresp="#place-tabernacolo-bravi">
+            Il <placeName ref="#place-tabernacolo-bravi">tabernacolo</placeName> si trova lungo l’antico percorso tra Olate e Acquate. L’edicola votiva attuale è una ricostruzione moderna che ricorda il luogo tradizionalmente associato all’incontro tra <persName ref="#pers-don-abbondio">Don Abbondio</persName> e i <persName ref="#pers-bravi">bravi</persName> e dove ad oggi si trova una targa che riporta un passo del romanzo.
           </note>
 
           <bibl>
-            <author>Alessandro Manzoni</author>,
+            <author ref="#pers-manzoni">Alessandro Manzoni</author>,
             <title>I Promessi Sposi</title>,
             <edition>Universale economica Feltrinelli/classici, 2020</edition>,
             <ref>Cap. I</ref>
@@ -422,31 +511,33 @@
           </head>
 
           <p>
-            <placeName>Villa Manzoni</placeName> è la casa natale dello scrittore e costituisce un riferimento reale al paesaggio del romanzo.
+            <placeName ref="#place-villa-manzoni">Villa Manzoni</placeName> è la casa natale dello scrittore e costituisce un riferimento reale al paesaggio del romanzo.
           </p>
 
-          <figure>
+          <figure corresp="#place-villa-manzoni">
             <graphic url="icone/villaManzoni.jpg"/>
-            <figDesc>La fotografia ritrae Villa Manzoni, situata nel quartiere Caleotto a Lecco. È un edificio in stile neoclassico che fu residenza della famiglia Manzoni tra il Seicento e l'Ottocento.</figDesc>
+            <figDesc>La fotografia ritrae <placeName ref="#place-villa-manzoni">Villa Manzoni</placeName>, situata nel quartiere Caleotto a <placeName ref="#place-lecco">Lecco</placeName>. È un edificio in stile neoclassico che fu residenza della famiglia Manzoni tra il Seicento e l'Ottocento.</figDesc>
             <note type="source">
-              Fonte dell'immagine: Wikimedia Commons
+              <ref target="https://commons.wikimedia.org/wiki/File:Villa_Manzoni.jpg">
+                Fonte dell'immagine: Wikimedia Commons
+              </ref>
             </note>
           </figure>
 
-          <cit>
+          <cit xml:id="cit-villa-manzoni" corresp="#place-villa-manzoni">
             <quote>Quel ramo del lago di Como, che volge a mezzogiorno, tra due catene non interrotte di monti, tutto a seni e a golfi, a seconda dell'ondeggiamenti di quella costa...</quote>
           </cit>
 
-          <note type="interpretation">
-            L’incipit del romanzo costruisce un paesaggio preciso e riconoscibile, ispirato alla città di Lecco in cui Manzoni trascorse l’infanzia e che può vedere da casa sua. La descrizione dettagliata conferisce realismo alla narrazione e trasforma il luogo reale in spazio letterario fondativo dell’intera vicenda.
+          <note type="interpretation" corresp="#cit-villa-manzoni">
+            L’incipit del romanzo costruisce un paesaggio preciso e riconoscibile, ispirato alla città di <placeName ref="#place-lecco">Lecco</placeName> in cui <persName ref="#pers-manzoni">Manzoni</persName> trascorse l’infanzia e che può vedere da casa sua. La descrizione dettagliata conferisce realismo alla narrazione e trasforma il luogo reale in spazio letterario fondativo dell’intera vicenda.
           </note>
 
-          <note type="commentary">
-            Villa Manzoni si trova nel quartiere Caleotto di Lecco ed è oggi sede del Museo Manzoniano. L’edificio risale al XVII secolo e fu abitato dalla famiglia Manzoni tra il 1782 e il 1807. Dalla villa era visibile il ramo orientale del lago di Como.
+          <note type="commentary" corresp="#place-villa-manzoni">
+            <placeName ref="#place-villa-manzoni">Villa Manzoni</placeName> si trova nel quartiere Caleotto di <placeName ref="#place-lecco">Lecco</placeName> ed è oggi sede del Museo Manzoniano. L’edificio risale al XVII secolo e fu abitato dalla famiglia Manzoni tra il 1782 e il 1807. Dalla villa era visibile il ramo orientale del lago di Como.
           </note>
 
           <bibl>
-            <author>Alessandro Manzoni</author>,
+            <author ref="#pers-manzoni">Alessandro Manzoni</author>,
             <title>I Promessi Sposi</title>,
             <edition>Universale economica Feltrinelli/classici, 2020</edition>,
             <ref>Cap. I</ref>
@@ -460,39 +551,41 @@
           </head>
 
           <p>
-            Il <placeName>Ponte Azzone Visconti</placeName> collega le due rive dell’Adda ed è luogo di passaggio fondamentale nella fuga di Renzo.
+            Il <placeName ref="#place-ponte-azzone-visconti">Ponte Azzone Visconti</placeName> collega le due rive dell’Adda ed è luogo di passaggio fondamentale nella fuga di <persName ref="#pers-renzo">Renzo</persName>.
           </p>
 
-          <figure>
+          <figure corresp="#place-ponte-azzone-visconti">
             <graphic url="icone/ponte.jpg"/>
-            <figDesc>L'immagine mostra il ponte Azzone Visconti a Lecco, conosciuto oggi anche come Ponte Vecchio, costruito tra il 1336 e il 1338 per meglio collegare la città di Lecco con il Ducato di Milano. Si tratta di uno dei monumenti simbolo della città.</figDesc>
+            <figDesc>L'immagine mostra il <placeName ref="#place-ponte-azzone-visconti">ponte Azzone Visconti</placeName> a <placeName ref="#place-lecco">Lecco</placeName>, conosciuto oggi anche come Ponte Vecchio, costruito tra il 1336 e il 1338 per meglio collegare la città di Lecco con il Ducato di Milano. Si tratta di uno dei monumenti simbolo della città.</figDesc>
             <note type="source">
-              Fonte dell'immagine: Wikimedia Commons
+              <ref target="https://commons.wikimedia.org/wiki/File:036_Lecco_-_ponte_Azzone_Visconti_(comunemente_chiamato_ponte_vecchio).jpg">
+                Fonte dell'immagine: Wikimedia Commons
+              </ref>
             </note>
           </figure>
 
-          <cit>
+          <cit xml:id="cit-ponte-azzone-visconti-1" corresp="#place-ponte-azzone-visconti">
             <quote>e il ponte, che ivi congiunge le due rive, par che [...] segni il punto in cui il lago cessa, e l’Adda rincomincia</quote>
           </cit>
 
-          <note type="interpretation">
+          <note type="interpretation" corresp="#cit-ponte-azzone-visconti-1">
             Il ponte è presentato come linea di confine naturale tra lago e fiume, tra due spazi diversi. Questa funzione geografica si riflette anche simbolicamente, dato che il ponte rappresenta un punto di passaggio e di transizione, dove il paesaggio muta e con esso la condizione dei personaggi.
           </note>
 
-          <cit>
+          <cit xml:id="cit-ponte-azzone-visconti-2" corresp="#place-ponte-azzone-visconti">
             <quote>È a Pescate; costeggia quell’ultimo tratto dell’ Adda, dando però un’occhiata malinconica a Pescarenico; passa il ponte</quote>
           </cit>
 
-          <note type="interpretation">
-            Nel ritorno verso il territorio natale, il ponte assume il valore opposto rispetto alla fuga, è segno del riavvicinamento alla patria e agli affetti. Lo sguardo malinconico verso Pescarenico indica la nostalgia per i luoghi dell’inizio della vicenda e insieme la consapevolezza della distanza morale che lo separa dal Renzo dell'inizio.
+          <note type="interpretation" corresp="#cit-ponte-azzone-visconti-2">
+            Nel ritorno verso il territorio natale, il ponte assume il valore opposto rispetto alla fuga, è segno del riavvicinamento alla patria e agli affetti. Lo sguardo malinconico verso Pescarenico indica la nostalgia per i luoghi dell’inizio della vicenda e insieme la consapevolezza della distanza morale che lo separa dal <persName ref="#pers-renzo">Renzo</persName> dell'inizio.
           </note>
 
-          <note type="commentary">
+          <note type="commentary" corresp="#place-ponte-azzone-visconti">
             Il ponte fu costruito tra il 1336 e il 1338 per volontà di Azzone Visconti. È lungo circa 130 metri ed è uno dei più antichi ponti in muratura ancora percorribili in Lombardia che in epoca seicentesca rappresentava un nodo strategico per il traffico commerciale.
           </note>
 
           <bibl>
-            <author>Alessandro Manzoni</author>,
+            <author ref="#pers-manzoni">Alessandro Manzoni</author>,
             <title>I Promessi Sposi</title>,
             <edition>Universale economica Feltrinelli/classici, 2020</edition>,
             <ref>Cap. I e XXXVII</ref>
@@ -506,39 +599,41 @@
           </head>
 
           <p>
-            La <placeName>casa del sarto</placeName> ospita Lucia dopo la fuga dal paese in seguito alla conversione dell'Innominato.
+            La <placeName ref="#place-casa-sarto">casa del sarto</placeName> ospita <persName ref="#pers-lucia">Lucia</persName> dopo la fuga dal paese in seguito alla conversione dell'<persName ref="#pers-innominato">Innominato</persName>.
           </p>
 
-          <figure>
+          <figure corresp="#place-casa-sarto">
             <graphic url="icone/Casa_del_sarto.jpg"/>
-            <figDesc>Fotografia della presunta Casa del Sarto ubicata nel quartiere di Chiuso a Lecco. Esempio di architettura rurale risalente al Seicento con un portale in pietra.</figDesc>
+            <figDesc>Fotografia della presunta <placeName ref="#place-casa-sarto">Casa del Sarto</placeName> ubicata nel quartiere di Chiuso a <placeName ref="#place-lecco">Lecco</placeName>. Esempio di architettura rurale risalente al Seicento con un portale in pietra.</figDesc>
             <note type="source">
-              Fonte dell'immagine: Wikimedia Commons
+              <ref target="https://commons.wikimedia.org/wiki/File:Casa_del_sarto.jpg">
+                Fonte dell'immagine: Wikimedia Commons
+              </ref>
             </note>
           </figure>
 
-          <cit>
+          <cit xml:id="cit-casa-sarto-1" corresp="#place-casa-sarto">
             <quote>La buona donna, fatta seder Lucia nel miglior luogo della sua cucina, s’affaccendava a preparar qualcosa da ristorarla</quote>
           </cit>
 
-          <note type="interpretation">
-            La casa del sarto viene presentata come uno spazio accogliente e rassicurante, caratterizzato da gesti di cura e ospitalità. La cucina diventa il centro simbolico di protezione domestica, contrapponendosi agli ambienti di violenza e paura attraversati da Lucia in precedenza, offrendo una pausa di sicurezza dopo il trauma del rapimento.
+          <note type="interpretation" corresp="#cit-casa-sarto-1">
+            <placeName ref="#place-casa-sarto">La casa del sarto</placeName> viene presentata come uno spazio accogliente e rassicurante, caratterizzato da gesti di cura e ospitalità. La cucina diventa il centro simbolico di protezione domestica, contrapponendosi agli ambienti di violenza e paura attraversati da <persName ref="#pers-lucia">Lucia</persName> in precedenza, offrendo una pausa di sicurezza dopo il trauma del rapimento.
           </note>
 
-          <cit>
+          <cit xml:id="cit-casa-sarto-2" corresp="#place-casa-sarto">
             <quote>Entra poi, con un passo più quieto, ma con una premura cordiale dipinta in viso, il padrone di casa. Era il sarto del villaggio</quote>
           </cit>
 
-          <note type="interpretation">
+          <note type="interpretation" corresp="#cit-casa-sarto-2">
             L’ingresso del sarto, descritto con premura e cordialità, rafforza l’immagine della casa come luogo di solidarietà. Questo spazio domestico rappresenta un luogo di carità concreta, fondata sull’accoglienza e sull’aiuto verso i più deboli.
           </note>
 
-          <note type="commentary">
-            La casa del sarto è tradizionalmente collocata nel quartiere di Chiuso, a Lecco. L’edificio risale al XVII secolo ed è un esempio di abitazione rurale lombarda con ambienti organizzati intorno alla cucina.
+          <note type="commentary" corresp="#place-casa-sarto">
+            <placeName ref="#place-casa-sarto">La casa del sarto</placeName> è tradizionalmente collocata nel quartiere di Chiuso, a <placeName ref="#place-lecco">Lecco</placeName>. L’edificio risale al XVII secolo ed è un esempio di abitazione rurale lombarda con ambienti organizzati intorno alla cucina.
           </note>
 
           <bibl>
-            <author>Alessandro Manzoni</author>,
+            <author ref="#pers-manzoni">Alessandro Manzoni</author>,
             <title>I Promessi Sposi</title>,
             <edition>Universale economica Feltrinelli/classici, 2020</edition>,
             <ref>Cap. XXIV</ref>
@@ -552,39 +647,41 @@
           </head>
 
           <p>
-            Il <placeName>Monte Resegone</placeName> è l’elemento naturale più riconoscibile del paesaggio lecchese, grazie alle nove punte principali.
+            Il <placeName ref="#place-monte-resegone">Monte Resegone</placeName> è l’elemento naturale più riconoscibile del paesaggio lecchese, grazie alle nove punte principali.
           </p>
 
-          <figure>
+          <figure corresp="#place-monte-resegone">
             <graphic url="icone/Resegone.jpg"/>
             <figDesc>Profilo seghettato del monte Resegone innevato.</figDesc>
             <note type="source">
-              Fonte dell'immagine: Wikimedia Commons
+              <ref target="https://commons.wikimedia.org/wiki/File:Monte_Resegone_che_si_specchia_nelle_acque_del_lago.jpg">
+                Fonte dell'immagine: Wikimedia Commons
+              </ref>
             </note>
           </figure>
 
-          <cit>
+          <cit xml:id="cit-monte-resegone-1" corresp="#place-monte-resegone">
             <quote>il Resegone, dai molti suoi cocuzzoli in fila, che in vero lo fanno somigliare a una sega</quote>
           </cit>
 
-          <note type="interpretation">
-            Il profilo seghettato del Resegone lo rende un elemento immediatamente riconoscibile del paesaggio. La montagna diventa così un punto di riferimento visivo stabile, quasi un segno identitario del territorio lecchese.
+          <note type="interpretation" corresp="#cit-monte-resegone-1">
+            Il profilo seghettato del <placeName ref="#place-monte-resegone">Resegone</placeName> lo rende un elemento immediatamente riconoscibile del paesaggio. La montagna diventa così un punto di riferimento visivo stabile, quasi un segno identitario del territorio lecchese.
           </note>
 
-          <cit>
+          <cit xml:id="cit-monte-resegone-2" corresp="#place-monte-resegone">
             <quote>Ma dopo qualche momento, voltandosi indietro, vide all’orizzonte quella cresta frastagliata di montagne, vide distinto e alto tra quelle il suo Resegone, si senti tutto rimescolare il sangue</quote>
           </cit>
 
-          <note type="interpretation">
-            Nel momento della fuga, la visione del Resegone suscita in Renzo una forte reazione emotiva. La montagna diventa simbolo delle proprie radici, caricandosi di un valore affettivo che rappresenta il legame con la propria terra che è costretto ad abbandonare.
+          <note type="interpretation" corresp="#cit-monte-resegone-2">
+            Nel momento della fuga, la visione del <placeName ref="#place-monte-resegone">Resegone</placeName> suscita in <persName ref="#pers-renzo">Renzo</persName> una forte reazione emotiva. La montagna diventa simbolo delle proprie radici, caricandosi di un valore affettivo che rappresenta il legame con la propria terra che è costretto ad abbandonare.
           </note>
 
-          <note type="commentary">
-            Il Resegone è una montagna alta 1875 metri facente parte delle Prealpi lombarde. Il suo nome deriva dal profilo frastagliato che ricorda una sega ed è uno degli elementi geografici più riconoscibili del territorio lecchese.
+          <note type="commentary" corresp="#place-monte-resegone">
+            Il <placeName ref="#place-monte-resegone">Resegone</placeName> è una montagna alta 1875 metri facente parte delle Prealpi lombarde. Il suo nome deriva dal profilo frastagliato che ricorda una sega ed è uno degli elementi geografici più riconoscibili del territorio lecchese.
           </note>
 
           <bibl>
-            <author>Alessandro Manzoni</author>,
+            <author ref="#pers-manzoni">Alessandro Manzoni</author>,
             <title>I Promessi Sposi</title>,
             <edition>Universale economica Feltrinelli/classici, 2020</edition>,
             <ref>Cap. I e XI</ref>
@@ -598,39 +695,41 @@
           </head>
 
           <p>
-            Il <placeName>Lazzaretto di Milano</placeName> è uno dei luoghi centrali degli episodi dedicati alla peste.
+            Il <placeName ref="#place-lazzaretto-milano">Lazzaretto di Milano</placeName> è uno dei luoghi centrali degli episodi dedicati alla peste.
           </p>
 
-          <figure>
+          <figure corresp="#place-lazzaretto-milano">
             <graphic url="icone/Lazzaretto.jpg"/>
-            <figDesc>Fotografia del 1870 che mostra l'area del Lazzaretto di Milano. Uno spazio a forma di quadrilatero, costruito tra la fine del XV secolo e l'inizio del XVI secolo e distrutto tra il 1882 e il 1890.</figDesc>
+            <figDesc>Fotografia del 1870 che mostra l'area del <placeName ref="#place-lazzaretto-milano">Lazzaretto di Milano</placeName>. Uno spazio a forma di quadrilatero, costruito tra la fine del XV secolo e l'inizio del XVI secolo e distrutto tra il 1882 e il 1890.</figDesc>
             <note type="source">
-              Fonte dell'immagine: Wikimedia Commons
+              <ref target="https://commons.wikimedia.org/wiki/File:Lazzaretto_milano_secolo_XIX.jpg">
+               Fonte dell'immagine: Wikimedia Commons
+             </ref>
             </note>
           </figure>
 
-          <cit>
-            <quote>Il lazzeretto di Milano [...] é un recinto quadrilatero e quasi quadrato, fuori della citta, a sinistra della porta detta orientale</quote>
+          <cit xml:id="cit-lazzaretto-milano-1" corresp="#place-lazzaretto-milano">
+            <quote>Il lazzaretto di Milano [...] é un recinto quadrilatero e quasi quadrato, fuori della citta, a sinistra della porta detta orientale</quote>
           </cit>
 
-          <note type="interpretation">
-            Il lazzaretto è presentato come uno spazio separato dalla città, destinato all’isolamento dei malati. La sua struttura chiusa riflette l’idea di esclusione sociale e di sospensione delle normali regole civili.
+          <note type="interpretation" corresp="#cit-lazzaretto-milano-1">
+            Il <placeName ref="#place-lazzaretto-milano">lazzaretto</placeName> è presentato come uno spazio separato dalla città, destinato all’isolamento dei malati. La sua struttura chiusa riflette l’idea di esclusione sociale e di sospensione delle normali regole civili.
           </note>
 
-          <cit>
-            <quote>Dormivano ammontati a venti a trenta per ognuna di quelle cellette, o accovacciati sotto iportici, sur un po’ di paglia putrida e fetente, o sulla nuda terra</quote>
+          <cit xml:id="cit-lazzaretto-milano-2" corresp="#place-lazzaretto-milano">
+            <quote>Dormivano ammontati a venti a trenta per ognuna di quelle cellette, o accovacciati sotto i portici, sur un po’ di paglia putrida e fetente, o sulla nuda terra</quote>
           </cit>
 
-          <note type="interpretation">
-            Le condizioni disumane rendono il luogo simbolo della dissoluzione dell’ordine sociale e morale causata dalla peste. Il lazzaretto diventa uno spazio di sofferenza collettiva.
+          <note type="interpretation" corresp="#cit-lazzaretto-milano-2">
+            Le condizioni disumane rendono il luogo simbolo della dissoluzione dell’ordine sociale e morale causata dalla peste. Il <placeName ref="#place-lazzaretto-milano">lazzaretto</placeName> diventa uno spazio di sofferenza collettiva.
           </note>
 
-          <note type="commentary">
-            Il lazzaretto di Milano fu costruito tra il 1488 e il 1509 per l’isolamento dei malati di peste. Fu costruito fuori dalle mura orientali della città e fu demolito tra il 1882 e il 1890 durante l’espansione urbana.
+          <note type="commentary" corresp="#place-lazzaretto-milano">
+            Il <placeName ref="#place-lazzaretto-milano">lazzaretto di Milano</placeName> fu costruito tra il 1488 e il 1509 per l’isolamento dei malati di peste. Fu costruito fuori dalle mura orientali della città e fu demolito tra il 1882 e il 1890 durante l’espansione urbana.
           </note>
 
           <bibl>
-            <author>Alessandro Manzoni</author>,
+            <author ref="#pers-manzoni">Alessandro Manzoni</author>,
             <title>I Promessi Sposi</title>,
             <edition>Universale economica Feltrinelli/classici, 2020</edition>,
             <ref>Cap. XXVIII</ref>
@@ -644,39 +743,41 @@
           </head>
 
           <p>
-            Il <placeName>Forno delle Grucce</placeName> è uno dei luoghi centrali della rivolta del pane a Milano.
+            Il <placeName ref="#place-forno-grucce">Forno delle Grucce</placeName> è uno dei luoghi centrali della rivolta del pane a <placeName ref="#place-milano">Milano</placeName>.
           </p>
 
-          <figure>
+          <figure corresp="#place-forno-grucce">
             <graphic url="icone/forno.jpg"/>
-            <figDesc>Illustrazione di Francesco Gonin tratta dall'edizione del 1840 dei <em>Promessi Sposi</em>. L'immagine raffigura il capitano di giustizia al forno delle Grucce, luogo da cui parte la rivolta del pane.</figDesc>
+            <figDesc>Illustrazione di Francesco Gonin tratta dall'edizione del 1840 dei <em>Promessi Sposi</em>. L'immagine raffigura il capitano di giustizia al <placeName ref="#place-forno-grucce">forno delle Grucce</placeName>, luogo da cui parte la rivolta del pane.</figDesc>
             <note type="source">
-              Fonte dell'immagine: WordPress
+              <ref target="https://classeapertasulmondo.wordpress.com/wp-content/uploads/2016/09/450px-i_promessi_sposi_173.jpg">
+                Fonte dell'immagine: WordPress
+              </ref>
             </note>
           </figure>
 
-          <cit>
+          <cit xml:id="cit-forno-grucce-1" corresp="#place-forno-grucce">
             <quote>mescolati poi con gli uni e con gli altri, c’eran coloro che avevan fatto disegno sopra un disordine più co’ fiocchi. — Al forno! al forno! - si grida.</quote>
           </cit>
 
-          <note type="interpretation">
+          <note type="interpretation" corresp="#cit-forno-grucce-1">
             Il forno diventa luogo d’attrazione della folla, caricandosi di un valore politico e sociale e diventando simbolo della fame e dell'ingiustizia.
           </note>
 
-          <cit>
+          <cit xml:id="cit-forno-grucce-1" corresp="#place-forno-grucce">
             <quote>— Pane! pane! aprite! aprite! — eran le parole più distinte nell'urlìo orrendo, che la folla mandava in risposta.</quote>
           </cit>
 
-          <note type="interpretation">
+          <note type="interpretation" corresp="#cit-forno-grucce-2">
             Le parole urlate mettono in luce la trasformazione dello spazio urbano in teatro di violenza popolare, trasformando il forno nel centro di una dinamica distruttiva.
           </note>
 
-          <note type="commentary">
-            Il forno delle Grucce si trovava nella zona occidentale di Milano, nei pressi dell’attuale via Torino ed era uno dei principali forni cittadini del Seicento. Ad oggi l'edificio non esiste più, ma è attestato da mappe storiche e documenti.
+          <note type="commentary" corresp="#place-forno-grucce">
+            Il <placeName ref="#place-forno-grucce">forno delle Grucce</placeName> si trovava nella zona occidentale di <placeName ref="#place-milano">Milano</placeName>, nei pressi dell’attuale via Torino ed era uno dei principali forni cittadini del Seicento. Ad oggi l'edificio non esiste più, ma è attestato da mappe storiche e documenti.
           </note>
 
           <bibl>
-            <author>Alessandro Manzoni</author>,
+            <author ref="#pers-manzoni">Alessandro Manzoni</author>,
             <title>I Promessi Sposi</title>,
             <edition>Universale economica Feltrinelli/classici, 2020</edition>,
             <ref>Cap. XII</ref>
@@ -690,39 +791,41 @@
           </head>
 
           <p>
-            La <placeName>Casa dei Promessi Sposi</placeName> a Milano rappresenta simbolicamente il nuovo inizio della famiglia dopo le prove attraversate.
+            La <placeName ref="#place-casa-promessi-sposi">Casa dei Promessi Sposi</placeName> a <placeName ref="#place-milano">Milano</placeName> rappresenta simbolicamente il nuovo inizio della famiglia dopo le prove attraversate.
           </p>
 
-          <figure>
+          <figure corresp="#place-casa-promessi-sposi">
             <graphic url="icone/casa-milano.jpg"/>
-            <figDesc>La fotografia raffigura la facciata della casa in cui Alessandro Manzoni visse dal 1814 alla morte, ubicata in via Morone 1 a Milano. Il palazzo venne restrutturato nel 1864 da Andrea Boni che diede al palazzo l'attuale stile neorinascimentale.</figDesc>
+            <figDesc>La fotografia raffigura la facciata della casa in cui <persName ref="#pers-manzoni">Alessandro Manzoni</persName> visse dal 1814 alla morte, ubicata in via Morone 1 a <placeName ref="#place-milano">Milano</placeName>. Il palazzo venne restrutturato nel 1864 da Andrea Boni che diede al palazzo l'attuale stile neorinascimentale.</figDesc>
             <note type="source">
-              Fonte dell'immagine: Wikimedia Commons
+              <ref target="https://commons.wikimedia.org/wiki/File:20170521_Casa_Manzoni.jpg">
+                Fonte dell'immagine: Wikimedia Commons
+              </ref>
             </note>
           </figure>
 
-          <cit>
+          <cit xml:id="cit-casa-promessi-sposi-1" corresp="#place-casa-promessi-sposi">
             <quote>Chi domandasse se non ci fu anche del dolore in distaccarsi dal paese nativo, da quelle montagne; ce ne fu sicuro [...] Ma, gia da qualche tempo, erano avvezzi tutt’e tre a riguardar come loro il paese dove andavano.</quote>
           </cit>
 
-          <note type="interpretation">
+          <note type="interpretation" corresp="#cit-casa-promessi-sposi-1">
             Il distacco dal paese natale segna il passaggio definitivo alla maturità. Il dolore rimane, ma dopo le prove affrontate durante tutto il racconto, anche il paese assume un significato diverso e la nuova casa diventa spazio di ricostruzione esistenziale.
           </note>
 
-          <cit>
+          <cit xml:id="cit-casa-promessi-sposi-2" corresp="#place-casa-promessi-sposi">
             <quote>conclusero che i guai vengono bensì spesso, perché ci si é dato cagione; ma che la condotta più cauta e più innocente non basta a tenerli lontani; e che quando vengono, o per colpa o senza colpa, la fiducia in Dio li raddolcisce, e li rende utili per una vita migliore.</quote>
           </cit>
 
-          <note type="interpretation">
+          <note type="interpretation" corresp="#cit-casa-promessi-sposi-2">
             Questa citazione riassume la morale finale della vicenda, ovvero il fatto che i problemi sono inevitabili per cui solo la fede in Dio diventa la chiave per trasformare il dolore il crescita.
           </note>
 
-          <note type="commentary">
-            La sistemazione finale dei protagonisti non corrisponde a un edificio preciso del romanzo, ma viene spesso associata simbolicamente alla casa milanese di Manzoni in via Morone, oggi diventata un museo.
+          <note type="commentary" corresp="#place-casa-promessi-sposi">
+            La sistemazione finale dei protagonisti non corrisponde a un edificio preciso del romanzo, ma viene spesso associata simbolicamente alla casa milanese di <persName ref="#pers-manzoni">Manzoni in via Morone, oggi diventata un museo.
           </note>
 
           <bibl>
-            <author>Alessandro Manzoni</author>,
+            <author ref="#pers-manzoni">Alessandro Manzoni</author>,
             <title>I Promessi Sposi</title>,
             <edition>Universale economica Feltrinelli/classici, 2020</edition>,
             <ref>Cap. XXXVIII</ref>
@@ -736,39 +839,41 @@
           </head>
 
           <p>
-          I <placeName>bastioni di Porta Venezia</placeName> segnano uno dei principali accessi alla città di Milano.
+          I <placeName ref="place-bastioni-porta-venezia">bastioni di Porta Venezia</placeName> segnano uno dei principali accessi alla città di <placeName ref="#place-milano">Milano</placeName>.
           </p>
 
-          <figure>
+          <figure corresp="#place-bastioni-porta-venezia">
             <graphic url="icone/Bastioni.jpg"/>
             <figDesc>La fotografia ritrae gli odierni caselli di Porta Venezia costruiti nel 1927 dall'architetto Vantini e situati tra Corso Buenos Aires e Corso Venezia.</figDesc>
             <note type="source">
-              Fonte dell'immagine: Wikimedia Commons
+              <ref target="https://commons.wikimedia.org/wiki/File:Bastioni_di_Porta_Venezia_-_Milano.jpg">
+                Fonte dell'immagine: Wikimedia Commons
+              </ref>
             </note>
           </figure>
 
-          <cit>
+          <cit xml:id="cit-bastioni-porta-venezia-1" corresp="#place-bastioni-porta-venezia">
             <quote>I bastioni scendevano in pendio irregolare, e il terreno era una superficie aspra e inuguale di rottami e di cocci buttati la a caso.</quote>
           </cit>
 
-          <note type="interpretation">
+          <note type="interpretation" corresp="#cit-bastioni-porta-venezia-1">
             Il paesaggio degradato e irregolare sottolinea il carattere marginale e instabile della zona, luogo di passaggio e di incertezza.
           </note>
 
-          <cit>
+          <cit xml:id="cit-bastioni-porta-venezia-2" corresp="#place-bastioni-porta-venezia">
             <quote>Renzo entra, passa; nessuno de’ gabellini gli bada: cosa che gli parve strana</quote>
           </cit>
 
-          <note type="interpretation">
-            L’assenza di controlli evidenzia il disordine amministrativo durante la carestia e permette a Renzo di entrare in città, segnando l’inizio della sua avventura milanese.
+          <note type="interpretation" corresp="#cit-bastioni-porta-venezia-2">
+            L’assenza di controlli evidenzia il disordine amministrativo durante la carestia e permette a <persName ref="#pers-renzo">Renzo</persName> di entrare in città, segnando l’inizio della sua avventura milanese.
           </note>
 
-          <note type="commentary">
-            I bastioni facevano parte delle mura spagnole costruite nel XVI secolo per difendere Milano, ma l'area attuale è stata profondamente trasformata tra XIX e XX secolo con la demolizione delle fortificazioni.
+          <note type="commentary" corresp="#place-bastioni-porta-venezia">
+            I <placeName ref="#place-bastioni-porta-venezia">bastioni</placeName> facevano parte delle mura spagnole costruite nel XVI secolo per difendere <placeName ref="#place-milano">Milano</placeName>, ma l'area attuale è stata profondamente trasformata tra XIX e XX secolo con la demolizione delle fortificazioni.
           </note>
 
           <bibl>
-            <author>Alessandro Manzoni</author>,
+            <author ref="#pers-manzoni">Alessandro Manzoni</author>,
             <title>I Promessi Sposi</title>,
             <edition>Universale economica Feltrinelli/classici, 2020</edition>,
             <ref>Cap. XI</ref>
@@ -782,39 +887,41 @@
           </head>
 
           <p>
-            Il <placeName>convento della Monaca di Monza</placeName> è il luogo di reclusione forzata di Gertrude.
+            Il <placeName ref="#place-convento-monaca-monza">convento della Monaca di Monza</placeName> è il luogo di reclusione forzata di Gertrude.
           </p>
 
-          <figure>
+          <figure corresp="#place-convento-monaca-monza">
             <graphic url="icone/monza-monaca.jpg"/>
-            <figDesc>La fotografia ritrae la facciata della chiesa dei Santi Margherita e Maurizio, ubicata nella città di Monza.</figDesc>
+            <figDesc>La fotografia ritrae la facciata della chiesa dei Santi Margherita e Maurizio, ubicata nella città di <placeName ref="#place-monza">Monza</placeName>.</figDesc>
             <note type="source">
-              Fonte dell'immagine: Wikimedia Commons
+              <ref target="https://commons.wikimedia.org/wiki/File:01_Monza_San_Maurizio.jpg">
+                Fonte dell'immagine: Wikimedia Commons
+              </ref>
             </note>
           </figure>
 
-          <cit>
+          <cit xml:id="cit-convento-monaca-monza-1" corresp="#place-convento-monaca-monza">
             <quote>S’avviaron dunque con luia quel convento; il quale, come ognun sa, era pochi passi distante da Monza.</quote>
           </cit>
 
-          <note type="interpretation">
+          <note type="interpretation" corresp="#cit-convento-monaca-monza-1">
             La collocazione isolata del convento anticipa la condizione di segregazione e di costrizione morale della monaca.
           </note>
 
-          <cit>
+          <cit xml:id="cit-convento-monaca-monza-2" corresp="#place-convento-monaca-monza">
             <quote>Attraversando un secondo cortile, diede qualche avvertimento alle donne, sul modo di portarsi con la signora. </quote>
           </cit>
 
-          <note type="interpretation">
-            I cortili e i passaggi interni sottolineano il carattere controllato e gerarchico dello spazio, che riflette la prigionia psicologica del personaggio, il quale malgrado tutto è una persona autorevole per cui Agnese e Lucia vengono messe in guardia sul modo in cui comportarsi.
+          <note type="interpretation" corresp="#cit-convento-monaca-monza-2">
+            I cortili e i passaggi interni sottolineano il carattere controllato e gerarchico dello spazio, che riflette la prigionia psicologica del personaggio, il quale malgrado tutto è una persona autorevole per cui <persName ref="#pers-agnese">Agnese</persName> e <persName ref="#pers-lucia">Lucia</persName> vengono messe in guardia sul modo in cui comportarsi.
           </note>
 
-          <note type="commentary">
-            Il convento è identificato con l’ex monastero di Santa Margherita a Monza, fondato nel XIV secolo che ad oggi ospita uffici pubblici, mentre la chiesa annessa è quella dei Santi Maurizio e Margherita.
+          <note type="commentary" corresp="#place-convento-monaca-monza">
+            Il convento è identificato con l’ex monastero di Santa Margherita a <placeName ref="#place-monza">Monza</placeName>, fondato nel XIV secolo che ad oggi ospita uffici pubblici, mentre la chiesa annessa è quella dei Santi Maurizio e Margherita.
           </note>
 
           <bibl>
-            <author>Alessandro Manzoni</author>,
+            <author ref="#pers-manzoni">Alessandro Manzoni</author>,
             <title>I Promessi Sposi</title>,
             <edition>Universale economica Feltrinelli/classici, 2020</edition>,
             <ref>Cap. IX</ref>

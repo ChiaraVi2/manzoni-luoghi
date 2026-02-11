@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mp:metadata xmlns:mp="http://example.org/MyProject/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://example.org/MyProject/ http://example.org/MyProject/schema.xsd">
+
+  <dc:title xsi:type="mp:wikidata" mp:ref="https://www.wikidata.org/wiki/Q24940457">Casa di Lucia</dc:title>
+
+  <dc:type xsi:type="mp:wikidata" mp:ref="https://www.wikidata.org/wiki/Q105115142">Luogo narrativo</dc:type>
+
+  <dc:source xsi:type="mp:wikidata" mp:ref="https://www.wikidata.org/wiki/Q28491">I Promessi Sposi</dc:source>
+
+  <dc:creator xsi:type="mp:viaf" mp:ref="https://viaf.org/viaf/14356/">Alessandro Manzoni</dc:creator>
+
+  <dc:coverage xsi:type="dcterms:TGN" mp:ref="http://www.geonames.org/10627441">Via Caldone 19, Olate, Lecco, Lombardia</dc:coverage>
+
+  <!-- W3CDTF è uno standard per rappresentare date e ore -->
+  <dcterms:temporal xsi:type="dcterms:W3CDTF">1628/1650</dcterms:temporal>
+  
+  <dc:subject xsi:type="mp:wikidata" mp:ref="https://www.wikidata.org/wiki/Q3838466">Lucia Mondella</dc:subject>
+  <dc:subject xsi:type="mp:wikidata" mp:ref="https://www.wikidata.org/wiki/Q3606643">Agnese</dc:subject>
+  <dc:subject xsi:type="mp:wikidata" mp:ref="https://www.wikidata.org/wiki/Q3933075">Renzo Tramaglino</dc:subject>
+  <dc:subject>Vita domestica</dc:subject>
+
+  <dc:language xsi:type="dcterms:ISO639-1">it</dc:language>
+
+  <dc:description xml:lang="it">
+  Scheda descrittiva del luogo narrativo "Casa di Lucia" ne I Promessi Sposi di Alessandro Manzoni.
+  </dc:description>
+
+  <dc:publisher>progetto didattico, Università di Bologna</dc:publisher>
+
+  <dcterms:isPartOf xsi:type="dcterms:URI">https://chiaravirciglio.github.io</dcterms:isPartOf>
+
+  <dc:identifier xsi:type="dcterms:URI">https://chiaravirciglio.github.io</dc:identifier>
+
+  <dcterms:modified xsi:type="dcterms:W3CDTF">2026-01-15</dcterms:modified>
+
+  <dc:format xsi:type="dcterms:IMT">text/html</dc:format>
+
+  <dc:rights>Creative Commons BY-NC-SA 4.0</dc:rights>
+
+  <dc:contributor>Chiara Virciglio</dc:contributor>
+
+</mp:metadata>
