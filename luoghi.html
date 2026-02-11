@@ -35,6 +35,7 @@
   <!-- icone Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
+
 <body>
 
   <!-- Navbar uguale -->
@@ -83,9 +84,43 @@
       </select>
     </div>
 
-    <div id="itemContainer" class="row g-4">
-      <!-- genera le card degli item -->
-    </div>
+    <!-- genera le card degli item -->
+    <div id="itemContainer" class="row g-4"></div>
+
+    <!-- Metadati del catalogo -->
+    <section class="mt-5 pt-4 border-top">
+      <h2 class="mb-3">
+        <i class="bi bi-file-earmark-text"></i>
+        Metadati del catalogo
+      </h2>
+
+      <p class="text-muted">
+        I metadati descrittivi del catalogo dei luoghi manzoniani sono disponibili nei seguenti formati standard per le Digital Humanities:
+      </p>
+
+      <ul class="list-unstyled">
+        <li class="mb-2">
+          📄
+          <a href="metadati.xml" target="_blank" class="fw-semibold">
+            Dublin Core (XML)
+          </a>
+          <span class="text-muted small">
+            — descrizione del catalogo secondo lo standard Dublin Core
+          </span>
+        </li>
+
+        <li>
+          📄
+          <a href="xml/tei.xml" target="_blank" class="fw-semibold">
+            TEI XML
+          </a>
+          <span class="text-muted small">
+            — codifica testuale e descrittiva secondo le linee guida TEI
+          </span>
+        </li>
+      </ul>
+    </section>
+
   </div>
 
   <!--footer uguale a quello della home-->
@@ -128,12 +163,9 @@
         </div>
       </div>
 
-      <a href="metadati.xml" target="_blank">📄 Metadati (Dublin Core XML)</a>
-      <a href="xml/tei.xml" target="_blank">📄 TEI XML</a>
-
       <hr class="border-light">
       <p class="mb-0">© 2025 Progetto universitario - <strong>Manzoni e i luoghi manzoniani</strong>
-      <span class= "d-block mt-1">Ultimo aggiornamento: novembre 2025</span></p>
+      <span class= "d-block mt-1">Ultimo aggiornamento: gennaio 2026</span></p>
 
     </div>
   </footer>
@@ -154,6 +186,7 @@
         "Passarono anche, pian piano, davanti alla nostra povera casetta: la più quieta di tutte, giacchè non c'era più nessuno."
       ],
       img: "icone/casa_di_Lucia.jpg",
+      link: "item-casa-lucia.html"
     },
     {
       titolo: "Palazzotto di Don Rodrigo",
@@ -296,6 +329,7 @@
   }
 ];
 
+// costanti
 const container = document.getElementById("itemContainer");
 const filtroSelect = document.getElementById("filtroZona");
 
