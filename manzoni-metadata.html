@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-  <!-- charset (visualizzazione lettere accentate) -->
+ <!-- charset (visualizzazione lettere accentate) -->
   <meta charset="UTF-8">
   <!-- viewport (rende responsive il sito) -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -70,24 +70,20 @@
   </nav>
 
   <header class="site-header text-center mt-5 pt-4">
-  <!-- breadcrumb -->
+  <!-- Breadcrumb -->
   <nav aria-label="breadcrumb">
-    <ol class="breadcrumb">
-      <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-      <li class="breadcrumb-item"><a href="luoghi.html">Catalogo</a></li>
-      <li class="breadcrumb-item active" aria-current="page">Casa di Lucia</li>
-    </ol>
+    <ol class="breadcrumb" id="breadcrumb"></ol>
   </nav>
 
-    <h1>Casa di Lucia</h1>
-    <p class="subtitle">Luogo domestico e spazio narrativo fondamentale nei Promessi Sposi</p>
-  </header>
+    <h1>Alessandro Manzoni</h1>
+    <h2>(1785-1873)</h2>
+  </hearder>
 
   <main class="container my-5 item-page">
 
     <section class="container my-5">
 
-      <div class="row">
+      <div class="row justify-content-center">
 
         <!-- sinistra -->
         <aside class="col-md-3 mb-4">
@@ -117,99 +113,58 @@
                   <i class="bi bi-download"></i> Scarica immagini
                 </a>
               </div>
-
-              <hr>
-
-              <!-- file xml -->
-              <p class="small fw-bold">
-                <i class="bi bi-file-earmark-code"></i> Metadati
-              </p>
-              <div class="d-grid gap-2">
-                <a href="DC-item.xml" target="_blank" class="btn btn-outline-primary btn-sm">
-                    Dublin Core (XML)
-                </a>
-                <a href="TEI-item.xml" target="_blank" class="btn btn-outline-primary btn-sm">
-                    TEI XML
-                </a>
-              </div>
-
             </div>
           </div>
         </aside>
 
         <!-- centro -->
-        <div class="col-md-7">
+        <div class="col-md-8">
 
           <div class="item-card">
 
-            <div class="row">
 
               <!-- Galleria -->
-              <div id="carouselCasaLucia" class="carousel slide mb-2" data-bs-ride="carousel">
+              <div id="carouselManzoni" class="carousel slide mb-3" data-bs-ride="carousel">
 
                 <div class="carousel-inner">
 
                   <div class="carousel-item active">
                     <figure>
-                      <img src="icone/casa_di_lucia.jpg" class="d-block w-100 rounded" alt="Casa di Lucia">
-                      <figcaption class="carousel-caption d-block text-center small mt-1">L'odierna facciata della casa di Lucia</figcaption>
+                      <img src="icone/manzoni.jpg" class="d-block w-100 rounded" alt="Ritratto di Alessandro Manzoni">
+                      <figcaption class="carousel-caption d-block small">Ritratto di Alessandro Manzoni</figcaption>
                     </figure>
                   </div>
 
                   <div class="carousel-item">
                     <figure>
-                      <img src="icone/targa.jpg" class="d-block w-100 rounded" alt="Targa">
-                      <figcaption class="carousel-caption d-block text-center small mt-1">Targa commemorativa della casa</figcaption>
+                      <img src="icone/manzoni2.jpg" class="d-block w-100 rounded" alt="Ritratto di Alessandro Manzoni">
+                      <figcaption class="carousel-caption d-block small">Monumento di Alessandro Manzoni situato nell'omonima piazza di Lecco</figcaption>
                     </figure>
                   </div>
 
                 </div>
 
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselCasaLucia" data-bs-slide="prev">
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselManzoni" data-bs-slide="prev">
                   <span class="carousel-control-prev-icon"></span>
                 </button>
 
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselCasaLucia" data-bs-slide="next">
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselManzoni" data-bs-slide="next">
                   <span class="carousel-control-next-icon"></span>
                 </button>
 
               </div>
 
               <!-- descrizione -->
-              <section class="mt-0">
+              <section class="mb-4">
                 <h2>Descrizione</h2>
-                <p><em>La presunta casa di Lucia si trova nel quartiere Olate nella città di Lecco. Viene identificata come l’abitazione in cui risiedeva la protagonista Lucia Mondella insieme alla madre Agnese all'inizio del romanzo.</em></p>
+                <p>Alessandro Manzoni (1785–1873) è stato uno scrittore e poeta italiano, autore del romanzo <em>I Promessi Sposi</em>, opera fondamentale per la formazione della lingua italiana moderna.</p>
               </section>
 
               <!-- Metadati -->
-              <dl class="metadata-grid vertical">
+              <dl class="mb-4">
 
                 <div class="metadata-row">
-                  <span class="metadata-term">Titolo</span>
-                  <span class="metadata-value">
-                    <a href="https://www.wikidata.org/wiki/Q24940457" target="_blank" title="Identificativo Wikidata per Casa di Lucia">Casa di Lucia <sup>Wikidata</sup>
-                    </a>
-                  </span>
-                </div>
-
-                <div class="metadata-row">
-                  <span class="metadata-term">Tipo</span>
-                  <span class="metadata-value">
-                    <a href="https://www.wikidata.org/wiki/Q105115142" target="_blank" title="Identificativo Wikidata per Luogo narrativo">Luogo narrativo <sup>Wikidata</sup>
-                    </a>
-                  </span>
-                </div>
-
-                <div class="metadata-row">
-                  <span class="metadata-term">Opera</span>
-                  <span class="metadata-value">
-                    <a href="https://www.wikidata.org/wiki/Q28491" target="_blank" title="Identificativo Wikidata per I Promessi Sposi"><em>I Promessi Sposi</em><sup>Wikidata</sup>
-                    </a>
-                  </span>
-                </div>
-
-                <div class="metadata-row">
-                  <span class="metadata-term">Autore</span>
+                  <span class="metadata-term">Cognome, nome</span>
                   <span class="metadata-value">
                     <a href="https://viaf.org/viaf/14356/" target="_blank" title="Identificativo VIAF di Manzoni, Alessandro">Manzoni, Alessandro <sup>VIAF</sup>
                     </a>
@@ -217,80 +172,119 @@
                 </div>
 
                 <div class="metadata-row">
-                  <span class="metadata-term">Luogo</span>
+                  <span class="metadata-term">Forma completa</span>
+                  <span class="metadata-value">Alessandro Francesco Tommaso Antonio Manzoni</span>
+                </div>
+
+                <div class="metadata-row">
+                  <span class="metadata-term">Sesso</span>
+                  <span class="metadata-value">M</span>
+                </div>
+
+                <div class="metadata-row">
+                  <span class="metadata-term">Data di nascita</span>
+                  <span class="metadata-value">07-03-1785</span>
+                </div>
+
+                <div class="metadata-row">
+                  <span class="metadata-term">Data di morte</span>
+                  <span class="metadata-value">22-05-1873</span>
+                </div>
+
+                <div class="metadata-row">
+                  <span class="metadata-term">Luogo di nascita e morte</span>
                   <span class="metadata-value">
-                    <a href="http://www.geonames.org/10627441" target="_blank" title="Identificativo GeoNames di Casa di Lucia, Lecco">Via Caldone 19, Olate, Lecco, Lombardia<sup>GeoNames</sup>
+                    <a href="http://www.geonames.org/3173435" target="_blank">Milano <sup>GeoNames</sup></a>
+                  </span>
+                </div>
+
+                <div class="metadata-row">
+                  <span class="metadata-term">Professione</span>
+                  <span class="metadata-value">Scrittore, poeta</span>
+                </div>
+
+                <div class="metadata-row">
+                  <span class="metadata-term">Opera principale</span>
+                  <span class="metadata-value">
+                    <a href="https://www.wikidata.org/wiki/Q28491" target="_blank">
+                      <em>I Promessi Sposi</em> <sup>Wikidata</sup>
                     </a>
                   </span>
                 </div>
 
                 <div class="metadata-row">
-                  <span class="metadata-term">Periodo</span>
-                  <span class="metadata-value">XVII secolo (ambientazione narrativa)</span>
+                  <span class="metadata-term">Lingua</span>
+                  <span class="metadata-value">Italiano</span>
                 </div>
 
                 <div class="metadata-row">
-                  <span class="metadata-term">Personaggi</span>
+                  <span class="metadata-term">ID pagina Wikipedia</span>
                   <span class="metadata-value">
-                    <a href="https://www.wikidata.org/wiki/Q3838466" target="_blank" title="Identificativo Wikidata per Lucia Mondella">Lucia Mondella<sup>Wikidata</sup>,
-                    </a>
-                    <a href="https://www.wikidata.org/wiki/Q3606643" target="_blank" title="Identificativo Wikidata per Agnese">Agnese<sup>Wikidata</sup>,
-                    </a>
-                    <a href="https://www.wikidata.org/wiki/Q3933075" target="_blank" title="Identificativo Wikidata per Renzo Tramaglino">Renzo Tramaglino<sup>Wikidata</sup>
+                    <a href="https://it.wikipedia.org/wiki/Alessandro_Manzoni" target="_blank" title="Identificativo VIAF di Manzoni, Alessandro">2719455<sup>Wikipedia</sup>
                     </a>
                   </span>
                 </div>
 
                 <div class="metadata-row">
-                  <span class="metadata-term">Tema</span>
-                  <span class="metadata-value">Vita domestica</span>
+                  <span class="metadata-term">ID pagina Treccani</span>
+                  <span class="metadata-value">
+                    <a href="https://www.treccani.it/enciclopedia/alessandro-manzoni" target="_blank" title="Identificativo VIAF di Manzoni, Alessandro">alessandro-manzoni<sup>Treccani</sup>
+                    </a>
+                  </span>
+                </div>
+
+                <div class="metadata-row">
+                  <span class="metadata-term">Controlli di autorità</span>
+                  <div class="metadata-value">
+                    <ul class="authority-list">
+                      <li>
+                        <a href="https://viaf.org/viaf/14356/" target="_blank" title="Identificativo VIAF di Manzoni, Alessandro">14356<sup>VIAF</sup></a>
+                      </li>
+                      <li>
+                        <a href="https://www.wikidata.org/wiki/Q1064" target="_blank" title="Identificativo Wikidata di Manzoni, Alessandro">Q1064<sup>Wikidata</sup></a>
+                      </li>
+                      <li>
+                        <a href="https://isni.oclc.org/cbs/DB=1.2//CMD?ACT=SRCH&IKT=8006&TRM=ISN%3A0000000120981297&TERMS_OF_USE_AGREED=Y&terms_of_use_agree=send&COOKIE=U50,KENDUSER,I28,B0028++++++,SY,NISNI,D1.2,E9b882f26-65,A,H1,,3-28,,30-41,,43-59,,65-70,,74-75,R137.204.127.13,FY" target="_blank" title="Identificativo ISNI di Manzoni, Alessandro">0000 0001 2098 1297<sup>ISNI</sup></a>
+                      </li>
+                      <li>
+                        <a href="https://opac.sbn.it/risultati-autori/-/opac-autori/detail/ITICCUCFIV009079?core=autori&item%3A6003%3ANome=alessandro+manzoni&_cacheid=1769694613240" target="_blank" title="Identificativo SBN di Manzoni, Alessandro">IT\ICCU\CFIV\009079<sup>SBN</sup></a>
+                      </li>
+                      <li> 
+                        <a href="https://www.europeana.eu/it/collections/person/60419-alessandro-manzoni" target="_blank" title="Identificativo Europeana di Manzoni, Alessandro">agent/base/60419<sup>Europeana</sup></a>
+                      </li>
+                      <li>
+                        <a href="http://id.loc.gov/authorities/names/n79039800" target="_blank" title="Identificativo LCCN di Manzoni, Alessandro">n79039800<sup>LCCN</sup></a>
+                      </li>
+                      <li>
+                        <a href="https://d-nb.info/gnd/118577409" target="_blank" title="Identificativo GND di Manzoni, Alessandro">118577409<sup>GND</sup></a>
+                      </li>
+                      <li>
+                        <a href="http://vocab.getty.edu/page/ulan/500087096" target="_blank" title="Identificativo ULAN di Manzoni, Alessandro">500087096<sup>ULAN</sup></a>
+                      </li>
+                      <li>
+                        <a href="https://opac.vatlib.it/auth/detail/495_72149" target="_blank" title="Identificativo BAV di Manzoni, Alessandro">495/72149<sup>BAV</sup></a>
+                      </li>
+                      <li>
+                        <a href="https://data.cerl.org/thesaurus/cnp01469234" target="_blank" title="Identificativo CERL di Manzoni, Alessandro">cnp01469234<sup>CERL</sup></a>
+                      </li>
+                      <li>
+                        <a href="https://id.oclc.org/worldcat/entity/E39PBJpPxhRCxm7yr3bhFgcgKd" target="_blank" title="Identificativo WorldCat Identifier di Manzoni, Alessandro">E39PBJpPxhRCxm7yr3bhFgcgKd<sup>WorldCat Identities</sup></a>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
 
               </dl>
 
-            </div>
-
           </div>
         </div>
-
-        <!-- destra -->
-        <div class="col-md-2">
-          <div class="author-card">
-            <img src="icone/manzoni.jpg" alt="Ritratto di Alessandro Manzoni">
-            <h6 class="mt-3 mb-0 fw-bold">Alessandro Manzoni</h6>
-            <p class="author-dates mb-2">1785 – 1873</p>
-            <p class="author-desc small">
-              Scrittore e poeta italiano, autore de <em>I Promessi Sposi</em>, opera fondamentale della letteratura italiana.
-            </p>
-
-            <div class="authority">
-              <strong>Controllo di autorità</strong>
-              <ul>
-                <li>
-                  VIAF:
-                  <a href="https://viaf.org/viaf/14356/" target="_blank">14356</a>
-                </li>
-                <li>
-                  Wikidata:
-                  <a href="https://www.wikidata.org/wiki/Q1064" target="_blank">Q1064</a>
-                </li>
-              </ul>
-            </div>
-
-            <div class="text-center mt-3">
-            <a href="manzoni-metadata.html?from=item" class="btn btn-outline-primary btn-sm mt-3 w-100">Scopri di più</a>
-            </div>
-
-
-          </div>
-
-        </div>
-
 
       </div>
 
     </section>
   </main>
+
+  </div>
 
   <!--footer uguale a quello della home-->
   <footer class="text-white py-5" style="background-color: #2e5a88;">
@@ -332,13 +326,33 @@
         </div>
       </div>
 
-
       <hr class="border-light">
       <p class="mb-0">© 2025 Progetto universitario - <strong>Manzoni e i luoghi manzoniani</strong>
       <span class= "d-block mt-1">Ultimo aggiornamento: gennaio 2026</span></p>
 
     </div>
   </footer>
+
+  <script>
+    const breadcrumb = document.getElementById("breadcrumb");
+    const params = new URLSearchParams(window.location.search);
+    const from = params.get("from");
+
+    if (from === "item") {
+      breadcrumb.innerHTML = `
+        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+        <li class="breadcrumb-item"><a href="luoghi.html">Catalogo</a></li>
+        <li class="breadcrumb-item"><a href="item-casa-lucia.html">Casa di Lucia</a></li>
+        <li class="breadcrumb-item active">Metadati</li>
+      `;
+    } else {
+      breadcrumb.innerHTML = `
+        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+        <li class="breadcrumb-item"><a href="manzoni.html">Manzoni</a></li>
+        <li class="breadcrumb-item active">Metadati</li>
+      `;
+    }
+  </script>
 
 </body>
 </html>
